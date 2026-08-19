@@ -190,17 +190,17 @@ body::before {
 .intro {
   background: var(--card);
   border-bottom: 1px solid var(--border);
-  padding-bottom: 2rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.75rem;
+  margin-bottom: 3rem;
 }
 
 .page-title {
-  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.5rem);
-  line-height: 1.15; margin: 2.5rem 0 0.5rem; max-width: 20ch;
+  font-size: clamp(2rem, 1.3rem + 3vw, 3.25rem);
+  line-height: 1.08; margin: 3.25rem 0 0.75rem; max-width: 18ch;
 }
 .page-subtitle {
-  margin: 0 0 2rem; color: var(--text-muted);
-  font-size: 1.125rem; max-width: var(--measure);
+  margin: 0 0 2.25rem; color: var(--text-muted);
+  font-size: 1.1875rem; line-height: 1.55; max-width: 54ch;
 }
 
 .disclaimer {
@@ -248,13 +248,16 @@ body::before {
 
 .filters-panel {
   margin-bottom: 2rem;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem 1.4rem;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  padding: 0 1.5rem 0 0;
+  border-right: 1px solid var(--border);
 }
 .filters-panel[hidden] { display: none; }
+
+@media (max-width: 55.99rem) {
+  .filters-panel { border-right: 0; padding-right: 0; }
+}
 
 @media (min-width: 56rem) {
   .filters-toggle { display: none; }
@@ -369,7 +372,7 @@ fieldset.filter-group legend {
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: var(--tap); padding: 0.65rem 1.35rem;
+  min-height: var(--tap); padding: 0.65rem 1.5rem;
   font: inherit; font-weight: 600;
   border-radius: var(--radius-sm); border: 1.5px solid transparent;
   cursor: pointer; text-decoration: none;
@@ -394,7 +397,7 @@ fieldset.filter-group legend {
   border-bottom: 2px solid var(--brand-lilac);
 }
 
-.result-list { display: grid; gap: 1.5rem; }
+.result-list { display: grid; gap: 1.75rem; }
 
 .card {
   overflow-wrap: anywhere;
@@ -402,7 +405,7 @@ fieldset.filter-group legend {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.6rem 1.6rem 1.6rem 1.9rem;
+  padding: 1.9rem 1.9rem 1.75rem 2.15rem;
   box-shadow: var(--shadow);
 }
 .card::before {
@@ -417,9 +420,9 @@ fieldset.filter-group legend {
 }
 .card:hover { border-color: var(--border-strong); }
 
-.card-name { font-size: 1.3125rem; line-height: 1.25; margin: 0 0 0.2rem; }
-.card-org { margin: 0 0 1rem; color: var(--text-muted); font-size: 0.9375rem; }
-.card-desc { margin: 0 0 1.25rem; max-width: var(--measure); }
+.card-name { font-size: 1.4375rem; line-height: 1.2; margin: 0 0 0.25rem; }
+.card-org { margin: 0 0 1.1rem; color: var(--text-muted); font-size: 0.9375rem; }
+.card-desc { margin: 0 0 1.5rem; max-width: var(--measure); color: var(--text); }
 
 .sample-badge {
   display: inline-block; margin: 0 0 0.7rem;
@@ -429,11 +432,13 @@ fieldset.filter-group legend {
   padding: 0.2rem 0.7rem; color: var(--text);
 }
 
-.chips { display: flex; flex-wrap: wrap; gap: 0.45rem; list-style: none; margin: 0 0 1.15rem; padding: 0; }
+/* Chips stay quiet so the group's name is the first thing you read. The name
+   keeps its place at the top of the card so heading navigation still works. */
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0 0 1.25rem; padding: 0; }
 .chip {
   border: 1px solid var(--border); border-radius: 999px;
-  padding: 0.25rem 0.8rem; font-size: 0.875rem;
-  background: var(--surface); color: var(--text);
+  padding: 0.22rem 0.75rem; font-size: 0.875rem;
+  background: var(--surface); color: var(--text-muted);
 }
 /* Moderation is the field people most need to trust, so it is set apart, but always by its own words, never by the colour on its own. */
 .chip-mod-yes, .chip-mod-no, .chip-mod-unknown {
@@ -514,5 +519,8 @@ fieldset.filter-group legend {
 @media (max-width: 26rem) {
   .wrap { padding: 0 1rem; }
   .card, .empty { padding: 1.25rem; }
-  .filters-panel { padding: 1.25rem 1.1rem; }
+  /* The panel is not a box any more, so it needs no padding of its own here.
+     Leaving the old value in re-added 1.1rem and pushed the page sideways
+     once text was scaled up. */
+  .filters-panel { padding: 0; }
 }
