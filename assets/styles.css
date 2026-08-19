@@ -1,0 +1,330 @@
+/* ==========================================================================
+   CAPA Peer Support Directory
+   Colours come from the CAPA logo. One accent (CAPA blue) carries every
+   interactive element; everything else is neutral on purpose.
+   ========================================================================== */
+
+:root {
+  --capa-blue:   #1975b8;
+  --capa-green:  #8ac340;
+  --capa-orange: #f49021;
+  --capa-purple: #9f3e93;
+
+  --bg:            #ffffff;
+  --surface:       #f2f5f7;
+  --card:          #ffffff;
+  --text:          #1a1f24;
+  --text-muted:    #4c555d;
+  --border:        #c7d0d7;
+  --border-strong: #7c878f;
+  --accent:        #10598f;
+  --accent-solid:  #1975b8;
+  --accent-on:     #ffffff;
+  --accent-soft:   #e8f1f8;
+  --focus:         #10598f;
+  --focus-halo:    #ffffff;
+  --warn-border:   #7c878f;
+
+  --radius: 8px;
+  --measure: 68ch;
+  --tap: 44px;
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:            #14181b;
+    --surface:       #1c2227;
+    --card:          #1c2227;
+    --text:          #e9edf0;
+    --text-muted:    #b3bcc4;
+    --border:        #3a444c;
+    --border-strong: #6d7982;
+    --accent:        #8ecbf0;
+    --accent-solid:  #8ecbf0;
+    --accent-on:     #0d1114;
+    --accent-soft:   #1d2c37;
+    --focus:         #8ecbf0;
+    --focus-halo:    #14181b;
+    --warn-border:   #6d7982;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  /* Long words (emails, URLs, French compounds) must never force the page
+     sideways at small widths or large text sizes. */
+  overflow-wrap: break-word;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.0625rem;      /* 17px */
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card-details, .filters-panel { transition: opacity 120ms ease; }
+}
+
+.wrap { width: 100%; max-width: 68rem; margin: 0 auto; padding: 0 1rem; }
+
+/* --- accessibility helpers ------------------------------------------------ */
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+.skip-link {
+  position: absolute; left: 0.5rem; top: -4rem;
+  background: var(--accent-solid); color: var(--accent-on);
+  padding: 0.75rem 1rem; border-radius: var(--radius); z-index: 100;
+}
+.skip-link:focus { top: 0.5rem; }
+
+:where(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* --- header --------------------------------------------------------------- */
+
+.site-header { border-bottom: 1px solid var(--border); background: var(--bg); }
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; min-height: 4rem; flex-wrap: wrap;
+}
+.logo-link { display: inline-flex; align-items: center; min-height: var(--tap); }
+.logo { height: 2.25rem; width: auto; display: block; }
+
+.lang-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: var(--tap); min-width: var(--tap);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  color: var(--accent); text-decoration: none; font-weight: 600;
+}
+.lang-toggle:hover { background: var(--accent-soft); }
+
+/* --- page intro ----------------------------------------------------------- */
+
+.page-title { font-size: 1.875rem; line-height: 1.25; margin: 1.75rem 0 0.25rem; }
+.page-subtitle { margin: 0 0 1.5rem; color: var(--text-muted); max-width: var(--measure); }
+
+.disclaimer {
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--capa-orange);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  max-width: var(--measure);
+}
+.disclaimer-heading { font-size: 1.0625rem; margin: 0 0 0.35rem; }
+.disclaimer p { margin: 0; }
+
+/* --- layout --------------------------------------------------------------- */
+
+.layout { display: block; }
+
+@media (min-width: 56rem) {
+  .layout {
+    display: grid;
+    grid-template-columns: 19rem minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+/* --- filters -------------------------------------------------------------- */
+
+.filters-toggle {
+  display: flex; align-items: center; gap: 0.5rem;
+  width: 100%; min-height: var(--tap);
+  padding: 0.75rem 1rem; margin-bottom: 1rem;
+  font: inherit; font-weight: 600; color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  cursor: pointer;
+}
+.filters-badge {
+  margin-left: auto;
+  background: var(--accent-solid); color: var(--accent-on);
+  border-radius: 999px; padding: 0.1rem 0.6rem; font-size: 0.9375rem;
+}
+
+.filters-panel { margin-bottom: 2rem; }
+.filters-panel[hidden] { display: none; }
+
+@media (min-width: 56rem) {
+  .filters-toggle { display: none; }
+  .filters-panel { display: block !important; position: sticky; top: 1rem; }
+}
+
+.filters-heading { font-size: 1.25rem; margin: 0 0 1rem; }
+
+.field { margin-bottom: 1.5rem; }
+.field-label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+.field-hint { margin: 0.35rem 0 0; font-size: 0.9375rem; color: var(--text-muted); }
+
+.search-input {
+  width: 100%; min-height: var(--tap);
+  padding: 0.6rem 0.75rem;
+  font: inherit; color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+}
+
+fieldset.filter-group {
+  border: 0; border-top: 1px solid var(--border);
+  margin: 0 0 0.5rem; padding: 1rem 0 0.5rem;
+}
+fieldset.filter-group legend { font-weight: 600; padding: 0; }
+
+.option-list { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+.option-list.is-scrollable { max-height: 17rem; overflow-y: auto; }
+
+.option {
+  display: flex; align-items: center; gap: 0.6rem;
+  min-height: var(--tap);
+  padding: 0.25rem 0.4rem;
+  cursor: pointer; border-radius: 4px;
+}
+.option:hover { background: var(--accent-soft); }
+/* Ring the whole 44px row, not just the small checkbox. The rule on the input
+   itself stays as a fallback for browsers without :has(). */
+.option:has(input:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.option input { width: 1.15rem; height: 1.15rem; margin: 0; flex: none; accent-color: var(--accent-solid); }
+/* min-width:0 lets a long option name wrap instead of widening the panel. */
+.option > span { min-width: 0; overflow-wrap: anywhere; }
+.option-count { margin-left: auto; color: var(--text-muted); font-size: 0.9375rem; }
+
+.more-filters { margin-top: 1rem; }
+.more-filters > summary {
+  min-height: var(--tap); display: flex; align-items: center;
+  font-weight: 600; cursor: pointer; padding: 0.5rem 0;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: var(--tap); padding: 0.65rem 1.25rem;
+  font: inherit; font-weight: 600;
+  border-radius: var(--radius); border: 1px solid transparent;
+  cursor: pointer; text-decoration: none;
+}
+.btn-primary { background: var(--accent-solid); color: var(--accent-on); }
+.btn-primary:hover { filter: brightness(0.92); }
+.btn-quiet {
+  background: transparent; color: var(--accent);
+  border-color: var(--border-strong); width: 100%;
+}
+.btn-quiet:hover { background: var(--accent-soft); }
+
+/* --- results -------------------------------------------------------------- */
+
+.results-column:focus { outline: none; }
+
+.result-count { font-weight: 600; margin: 0 0 1rem; }
+
+.result-list { display: grid; gap: 1.25rem; }
+
+.card {
+  overflow-wrap: anywhere;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.card-name { font-size: 1.25rem; line-height: 1.3; margin: 0 0 0.15rem; }
+.card-org { margin: 0 0 0.75rem; color: var(--text-muted); }
+.card-desc { margin: 0 0 1rem; max-width: var(--measure); }
+
+.sample-badge {
+  display: inline-block; margin-bottom: 0.5rem;
+  font-size: 0.875rem; font-weight: 700; letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px dashed var(--border-strong); border-radius: 4px;
+  padding: 0.15rem 0.5rem; color: var(--text-muted);
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin: 0 0 1rem; padding: 0; }
+.chip {
+  border: 1px solid var(--border-strong); border-radius: 999px;
+  padding: 0.2rem 0.7rem; font-size: 0.9375rem;
+  background: var(--surface); color: var(--text);
+}
+.chip-mod-yes  { border-left: 5px solid var(--capa-green); }
+.chip-mod-no   { border-left: 5px solid var(--capa-orange); }
+.chip-mod-unknown { border-left: 5px solid var(--border-strong); }
+
+.card-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+
+.details-toggle {
+  background: transparent; color: var(--accent);
+  border: 1px solid var(--border-strong);
+}
+
+.card-details { margin-top: 1.25rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.card-details[hidden] { display: none; }
+
+.detail-list { margin: 0; display: grid; gap: 0.85rem; }
+.detail-list > div { display: block; }
+.detail-list dt { font-weight: 600; }
+.detail-list dd { margin: 0; max-width: var(--measure); overflow-wrap: anywhere; }
+
+.card-footer {
+  margin-top: 1rem; padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9375rem; color: var(--text-muted);
+}
+.stale-note {
+  display: block; margin-top: 0.25rem;
+  border-left: 4px solid var(--warn-border); padding-left: 0.6rem;
+}
+
+/* --- empty state ---------------------------------------------------------- */
+
+.empty {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); padding: 1.5rem;
+}
+.empty h3 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+.empty ul { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.6rem; justify-items: start; }
+
+/* --- footer --------------------------------------------------------------- */
+
+.suggest { margin: 2.5rem 0 1rem; }
+.suggest a, .empty a, .card a:not(.btn) { color: var(--accent); }
+
+/* Standalone links get a full-size target — this community includes a lot of
+   people with hand and wrist pain, so nothing to press is smaller than 44px. */
+.suggest a, .card-source a, .empty p a {
+  display: inline-flex; align-items: center;
+  min-height: var(--tap); padding: 0.25rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 2rem; padding: 1.5rem 0 3rem;
+  color: var(--text-muted); font-size: 0.9375rem;
+}
+.site-footer p { margin: 0 0 0.35rem; max-width: var(--measure); }
+
+/* --- narrow screens ------------------------------------------------------- */
+
+@media (max-width: 22.5rem) {
+  .page-title { font-size: 1.5rem; }
+  .card { padding: 1rem; }
+  .wrap { padding: 0 0.75rem; }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arthritispatient.ca/peer-support/groups.schema.json",
+  "title": "CAPA Peer Support Directory — group listing",
+  "description": "One record per peer support group or service. Free-text fields carry _en and _fr variants; _fr may be empty and the app falls back to _en.",
+  "type": "object",
+  "required": ["records"],
+  "properties": {
+    "version": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date" },
+    "records": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/group" }
+    }
+  },
+  "$defs": {
+    "isoDate": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "nullableString": { "type": ["string", "null"] },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name_en", "organization", "description_en", "conditions",
+        "format", "province", "language", "cost", "how_to_access",
+        "facilitator_type", "moderated", "focus_areas", "audience", "last_verified"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Stable slug. Never reuse or recycle an id — it is what a shared link points at."
+        },
+        "placeholder": {
+          "type": "boolean",
+          "description": "true = invented sample data, not a real group. The app labels these visibly. Delete these records before launch."
+        },
+        "name_en": { "type": "string", "minLength": 1 },
+        "name_fr": { "type": "string" },
+        "organization": { "type": "string", "minLength": 1 },
+        "description_en": { "type": "string", "minLength": 1 },
+        "description_fr": { "type": "string" },
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Open vocabulary. See data/vocabularies.md for the preferred terms."
+        },
+        "format": {
+          "type": "string",
+          "enum": ["in-person", "virtual", "hybrid", "phone", "online-forum"]
+        },
+        "province": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["AB","BC","MB","NB","NL","NS","NT","NU","ON","PE","QC","SK","YT","national"]
+          },
+          "description": "Use ['national'] for anywhere-in-Canada. A record may combine 'national' with specific provinces."
+        },
+        "city": { "$ref": "#/$defs/nullableString" },
+        "language": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["en", "fr", "other"] },
+          "description": "Language the group is RUN in — not the language of this listing."
+        },
+        "language_notes_en": { "type": "string" },
+        "language_notes_fr": { "type": "string" },
+        "cost": {
+          "type": "string",
+          "enum": ["free", "membership-required", "fee", "unknown"]
+        },
+        "cost_notes_en": { "type": "string" },
+        "cost_notes_fr": { "type": "string" },
+        "how_to_access": {
+          "type": "string",
+          "enum": ["self-refer", "sign-up-form", "referral-needed", "membership-required", "contact-first", "drop-in", "unknown"]
+        },
+        "how_to_access_notes_en": { "type": "string" },
+        "how_to_access_notes_fr": { "type": "string" },
+        "access_url": { "$ref": "#/$defs/nullableString" },
+        "facilitator_type": {
+          "type": "string",
+          "enum": ["peer-volunteer", "staff", "health-professional", "mixed", "unknown"]
+        },
+        "facilitator_notes_en": { "type": "string" },
+        "facilitator_notes_fr": { "type": "string" },
+        "moderated": {
+          "type": "string",
+          "enum": ["yes", "no", "unknown"],
+          "description": "Surfaced on every card. 'unknown' is an honest answer and must never be recorded as 'yes'."
+        },
+        "moderation_notes_en": { "type": "string", "description": "What the rules are, who enforces them, whether the space is private." },
+        "moderation_notes_fr": { "type": "string" },
+        "focus_areas": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "audience": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"]
+          }
+        },
+        "schedule_notes_en": { "type": "string" },
+        "schedule_notes_fr": { "type": "string" },
+        "contact_email": { "$ref": "#/$defs/nullableString" },
+        "contact_phone": { "$ref": "#/$defs/nullableString" },
+        "last_verified": { "$ref": "#/$defs/isoDate" },
+        "source_url": { "$ref": "#/$defs/nullableString" }
+      }
+    }
+  }
+}

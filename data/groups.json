@@ -1,0 +1,298 @@
+{
+  "version": "1",
+  "last_updated": "2026-08-19",
+  "records": [
+    {
+      "id": "sample-national-virtual-circle",
+      "placeholder": true,
+      "name_en": "Sample National Virtual Peer Circle",
+      "name_fr": "Exemple de cercle national de soutien virtuel",
+      "organization": "Sample Arthritis Network (placeholder)",
+      "description_en": "A monthly online group where people living with any form of arthritis share experiences and practical strategies. This is sample data used to test the directory — it is not a real group.",
+      "description_fr": "Groupe mensuel en ligne où des personnes vivant avec une forme d'arthrite partagent leurs expériences et des stratégies pratiques. Ces données sont fictives et servent à tester le répertoire.",
+      "conditions": [
+        "any arthritis",
+        "rheumatoid arthritis",
+        "psoriatic arthritis"
+      ],
+      "format": "virtual",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "No cost to attend. Registration is required.",
+      "cost_notes_fr": "La participation est gratuite. L'inscription est requise.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Complete a short registration form; you receive the video link by email.",
+      "how_to_access_notes_fr": "Remplissez un court formulaire d'inscription; le lien vidéo vous est envoyé par courriel.",
+      "access_url": "https://example.org/sample-virtual-circle",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Two trained volunteer facilitators who live with arthritis themselves.",
+      "facilitator_notes_fr": "Deux bénévoles formés qui vivent eux-mêmes avec l'arthrite.",
+      "moderated": "yes",
+      "moderation_notes_en": "Facilitators moderate every session. Ground rules cover confidentiality, no recording, and no medical advice. Sessions are not recorded.",
+      "moderation_notes_fr": "Les animateurs modèrent chaque séance. Les règles couvrent la confidentialité, l'interdiction d'enregistrer et l'absence de conseils médicaux. Les séances ne sont pas enregistrées.",
+      "focus_areas": [
+        "emotional support",
+        "newly diagnosed",
+        "self-management"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "schedule_notes_en": "Second Tuesday of each month, 7:00–8:00 p.m. ET.",
+      "schedule_notes_fr": "Le deuxième mardi de chaque mois, de 19 h à 20 h (HE).",
+      "contact_email": "hello@example.org",
+      "contact_phone": null,
+      "last_verified": "2026-08-01",
+      "source_url": "https://example.org/sample-virtual-circle"
+    },
+    {
+      "id": "sample-local-inperson-group",
+      "placeholder": true,
+      "name_en": "Sample City In-Person Support Group",
+      "name_fr": "Exemple de groupe de soutien en personne",
+      "organization": "Sample Regional Health Partnership (placeholder)",
+      "description_en": "An in-person group meeting at a community centre for people with inflammatory arthritis and their care partners. Sample data — not a real group.",
+      "description_fr": "Groupe en personne se réunissant dans un centre communautaire pour les personnes atteintes d'arthrite inflammatoire et leurs proches aidants. Données fictives.",
+      "conditions": [
+        "rheumatoid arthritis",
+        "ankylosing spondylitis"
+      ],
+      "format": "in-person",
+      "province": [
+        "ON"
+      ],
+      "city": "Sample City",
+      "language": [
+        "en"
+      ],
+      "cost": "fee",
+      "cost_notes_en": "Suggested $5 drop-in contribution; nobody is turned away for cost.",
+      "cost_notes_fr": "Contribution suggérée de 5 $; personne n'est refusé pour des raisons financières.",
+      "how_to_access": "drop-in",
+      "how_to_access_notes_en": "Just show up. No registration needed.",
+      "how_to_access_notes_fr": "Présentez-vous simplement. Aucune inscription requise.",
+      "access_url": "https://example.org/sample-inperson-group",
+      "facilitator_type": "mixed",
+      "facilitator_notes_en": "Led by a peer volunteer, with an occupational therapist attending every second session.",
+      "facilitator_notes_fr": "Animé par un bénévole pair; un ergothérapeute participe une séance sur deux.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "movement",
+        "emotional support",
+        "caregivers"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "schedule_notes_en": "Third Saturday morning each month.",
+      "schedule_notes_fr": "Le troisième samedi matin de chaque mois.",
+      "contact_email": null,
+      "contact_phone": "555-555-0100",
+      "last_verified": "2026-06-15",
+      "source_url": "https://example.org/sample-inperson-group"
+    },
+    {
+      "id": "sample-private-online-forum",
+      "placeholder": true,
+      "name_en": "Sample Private Online Community",
+      "name_fr": "Exemple de communauté privée en ligne",
+      "organization": "Sample Patient Community (placeholder)",
+      "description_en": "A private discussion forum for people living with chronic pain conditions, including arthritis. Sample data — not a real group.",
+      "description_fr": "Forum de discussion privé pour les personnes vivant avec des affections douloureuses chroniques, dont l'arthrite. Données fictives.",
+      "conditions": [
+        "chronic pain",
+        "fibromyalgia",
+        "any arthritis"
+      ],
+      "format": "online-forum",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en",
+        "fr"
+      ],
+      "language_notes_en": "Threads are posted in both languages; not all replies are translated.",
+      "language_notes_fr": "Les fils sont publiés dans les deux langues; les réponses ne sont pas toutes traduites.",
+      "cost": "membership-required",
+      "cost_notes_en": "Free account required to read and post.",
+      "cost_notes_fr": "Un compte gratuit est requis pour lire et publier.",
+      "how_to_access": "membership-required",
+      "how_to_access_notes_en": "Create a free account, then request to join the private space.",
+      "how_to_access_notes_fr": "Créez un compte gratuit, puis demandez à joindre l'espace privé.",
+      "access_url": "https://example.org/sample-forum",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Volunteer moderators drawn from long-standing members.",
+      "facilitator_notes_fr": "Modérateurs bénévoles issus des membres de longue date.",
+      "moderated": "yes",
+      "moderation_notes_en": "Posts are reviewed by volunteer moderators. Published community rules prohibit medical advice and promotion. The space is not visible to search engines.",
+      "moderation_notes_fr": "Les publications sont examinées par des modérateurs bénévoles. Les règles publiées interdisent les conseils médicaux et la promotion. L'espace n'est pas indexé par les moteurs de recherche.",
+      "focus_areas": [
+        "emotional support",
+        "pain and fatigue",
+        "treatment decisions"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "schedule_notes_en": "Open any time.",
+      "schedule_notes_fr": "Ouvert en tout temps.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-07-20",
+      "source_url": "https://example.org/sample-forum"
+    },
+    {
+      "id": "sample-telephone-peer-support",
+      "placeholder": true,
+      "name_en": "Sample Telephone Peer Support",
+      "name_fr": "Exemple de soutien téléphonique par les pairs",
+      "organization": "Sample Arthritis Network (placeholder)",
+      "description_en": "One-to-one telephone support with a trained volunteer who also lives with arthritis. Sample data — not a real service.",
+      "description_fr": "Soutien téléphonique individuel avec un bénévole formé qui vit aussi avec l'arthrite. Données fictives.",
+      "conditions": [
+        "any arthritis"
+      ],
+      "format": "phone",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en",
+        "fr"
+      ],
+      "cost": "free",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Call or email to be matched with a volunteer; expect a call back within a week.",
+      "how_to_access_notes_fr": "Appelez ou écrivez pour être jumelé à un bénévole; rappel sous une semaine.",
+      "access_url": "https://example.org/sample-phone-support",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Volunteers complete training on boundaries and referral before being matched.",
+      "facilitator_notes_fr": "Les bénévoles suivent une formation sur les limites et l'orientation avant le jumelage.",
+      "moderated": "yes",
+      "moderation_notes_en": "Calls follow a volunteer code of conduct with a named staff supervisor and an escalation process for urgent distress.",
+      "moderation_notes_fr": "Les appels suivent un code de conduite avec un superviseur désigné et un processus d'escalade en cas de détresse urgente.",
+      "focus_areas": [
+        "newly diagnosed",
+        "emotional support",
+        "treatment decisions"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "schedule_notes_en": "Weekdays, by appointment.",
+      "schedule_notes_fr": "En semaine, sur rendez-vous.",
+      "contact_email": "phone@example.org",
+      "contact_phone": "555-555-0199",
+      "last_verified": "2026-05-30",
+      "source_url": "https://example.org/sample-phone-support"
+    },
+    {
+      "id": "sample-quebec-francophone-group",
+      "placeholder": true,
+      "name_en": "Sample Francophone Virtual Group",
+      "name_fr": "Exemple de groupe virtuel francophone",
+      "organization": "Sample Québec Patient Association (placeholder)",
+      "description_en": "A French-language virtual group for people living with inflammatory arthritis in Québec. Sample data — not a real group.",
+      "description_fr": "Groupe virtuel en français pour les personnes vivant avec une arthrite inflammatoire au Québec. Données fictives.",
+      "conditions": [
+        "rheumatoid arthritis",
+        "psoriatic arthritis",
+        "lupus"
+      ],
+      "format": "virtual",
+      "province": [
+        "QC"
+      ],
+      "city": null,
+      "language": [
+        "fr"
+      ],
+      "language_notes_en": "Sessions run in French only.",
+      "language_notes_fr": "Les séances se déroulent uniquement en français.",
+      "cost": "membership-required",
+      "cost_notes_en": "Included with association membership ($25/year).",
+      "cost_notes_fr": "Inclus avec l'adhésion à l'association (25 $/an).",
+      "how_to_access": "membership-required",
+      "how_to_access_notes_en": "Join the association, then register for a session.",
+      "how_to_access_notes_fr": "Adhérez à l'association, puis inscrivez-vous à une séance.",
+      "access_url": "https://example.org/sample-qc-group",
+      "facilitator_type": "staff",
+      "facilitator_notes_en": "Facilitated by association staff.",
+      "facilitator_notes_fr": "Animé par le personnel de l'association.",
+      "moderated": "yes",
+      "moderation_notes_en": "Staff facilitate and enforce published participation rules.",
+      "moderation_notes_fr": "Le personnel anime et applique les règles de participation publiées.",
+      "focus_areas": [
+        "emotional support",
+        "young adults",
+        "work and school"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "schedule_notes_en": "Every other Wednesday evening.",
+      "schedule_notes_fr": "Un mercredi soir sur deux.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-04-10",
+      "source_url": "https://example.org/sample-qc-group"
+    },
+    {
+      "id": "sample-chronic-pain-hybrid",
+      "placeholder": true,
+      "name_en": "Sample Chronic Pain Peer Program",
+      "name_fr": "Exemple de programme de soutien pour la douleur chronique",
+      "organization": "Sample Prairie Pain Coalition (placeholder)",
+      "description_en": "A hybrid program combining in-person meetups with a virtual option, for people managing chronic pain including arthritis pain. Sample data — not a real program.",
+      "description_fr": "Programme hybride combinant des rencontres en personne et une option virtuelle, pour les personnes vivant avec la douleur chronique, dont la douleur arthritique. Données fictives.",
+      "conditions": [
+        "chronic pain",
+        "osteoarthritis",
+        "any arthritis"
+      ],
+      "format": "hybrid",
+      "province": [
+        "AB",
+        "SK"
+      ],
+      "city": "Sample Town",
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "how_to_access": "self-refer",
+      "how_to_access_notes_en": "Register online or attend the in-person session directly.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne ou présentez-vous à la séance en personne.",
+      "access_url": "https://example.org/sample-pain-program",
+      "facilitator_type": "health-professional",
+      "facilitator_notes_en": "Sessions are led by a physiotherapist, with peer volunteers supporting.",
+      "facilitator_notes_fr": "Les séances sont dirigées par un physiothérapeute, avec le soutien de bénévoles pairs.",
+      "moderated": "no",
+      "focus_areas": [
+        "pain and fatigue",
+        "movement",
+        "self-management"
+      ],
+      "audience": [
+        "adults",
+        "seniors"
+      ],
+      "schedule_notes_en": "Weekly on Thursdays.",
+      "schedule_notes_fr": "Chaque jeudi.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2025-02-01",
+      "source_url": "https://example.org/sample-pain-program"
+    }
+  ]
+}

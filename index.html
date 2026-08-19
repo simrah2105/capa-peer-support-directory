@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peer Support Directory — Canadian Arthritis Patient Alliance</title>
+<meta name="description" content="A searchable directory of arthritis and chronic pain peer support groups and services across Canada.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#results" data-i18n="site.skipToResults">Skip to results</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo-link" id="logo-link" href="https://arthritispatient.ca/">
+      <img src="assets/capa-logo.png" alt="" width="120" height="40" class="logo">
+      <span class="visually-hidden" data-i18n="site.logoAlt">Canadian Arthritis Patient Alliance</span>
+    </a>
+    <nav class="lang-nav" aria-label="Language">
+      <a id="lang-toggle" class="lang-toggle" href="?lang=fr">
+        <span data-i18n="lang.switchTo">Français</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1 class="page-title" data-i18n="site.title">Peer Support Directory</h1>
+  <p class="page-subtitle" data-i18n="site.subtitle">Arthritis and chronic pain peer support across Canada</p>
+
+  <aside class="disclaimer" aria-labelledby="disclaimer-heading">
+    <h2 id="disclaimer-heading" class="disclaimer-heading" data-i18n="disclaimer.heading">Before you use this directory</h2>
+    <p data-i18n="disclaimer.body"></p>
+  </aside>
+
+  <div class="layout">
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Filters                                                             -->
+    <!-- ------------------------------------------------------------------ -->
+    <div class="filters-column">
+      <button type="button" id="filters-toggle" class="filters-toggle" aria-expanded="false" aria-controls="filters-panel">
+        <span data-i18n="filters.show">Show filters</span>
+        <span id="filters-active-count" class="filters-badge" hidden></span>
+      </button>
+
+      <form id="filters-panel" class="filters-panel" aria-labelledby="filters-heading">
+        <h2 id="filters-heading" class="filters-heading" data-i18n="filters.heading">Filter</h2>
+
+        <div class="field">
+          <label class="field-label" for="search" data-i18n="search.label">Search groups</label>
+          <input type="search" id="search" name="q" class="search-input" autocomplete="off"
+                 aria-describedby="search-hint">
+          <p class="field-hint" id="search-hint" data-i18n="search.hint"></p>
+        </div>
+
+        <div id="filter-groups"></div>
+
+        <button type="button" id="clear-all" class="btn btn-quiet" data-i18n="filters.clearAll">Clear all filters</button>
+      </form>
+    </div>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Results                                                             -->
+    <!-- ------------------------------------------------------------------ -->
+    <section class="results-column" id="results" aria-labelledby="results-heading" tabindex="-1">
+      <h2 id="results-heading" class="visually-hidden" data-i18n="results.heading">Groups</h2>
+      <p id="result-count" class="result-count" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div id="result-list" class="result-list"></div>
+    </section>
+
+  </div>
+
+  <p class="suggest">
+    <a id="suggest-link" href="#" data-i18n="suggest.link">Suggest a group or report an outdated listing</a>
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-updated" class="footer-updated"></p>
+    <p data-i18n="footer.about"></p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
