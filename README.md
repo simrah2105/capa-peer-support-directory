@@ -4,7 +4,7 @@ A searchable directory of arthritis and chronic pain peer support groups and
 services across Canada, built for the
 [Canadian Arthritis Patient Alliance](https://arthritispatient.ca/).
 
-It is a plain website — no database, no logins, no accounts, no cookies, and
+It is a plain website, no database, no logins, no accounts, no cookies, and
 nothing stored on the visitor's computer. Everything a visitor picks (their
 language, their search, their filters) is kept in the web address, so any view
 of the directory can be copied and shared as a link.
@@ -17,16 +17,25 @@ These are the things that still need a person to decide. Everything else works.
 
 | What | Where to change it | Status |
 |---|---|---|
-| Email for "Suggest a group" | `assets/config.js` → `contactEmail` | **Guessed** — currently `info@arthritispatient.ca` |
-| Useful Resources link | `assets/config.js` → `resourcesUrl` | **Guessed** — the URL responds, but confirm it is the right page |
-| Cost, moderation and facilitator detail | `data/groups.csv` | **Mostly `unknown`** — see `data/NOT-LISTED.md` |
-| French wording | `assets/i18n.js` | **Drafted, not reviewed** — see `REVIEW-FR.md` |
+| Email for "Suggest a group" | `assets/config.js` → `contactEmail` | **Guessed**, currently `info@arthritispatient.ca` |
+| Useful Resources link | `assets/config.js` → `resourcesUrl` | **Guessed**, the URL responds, but confirm it is the right page |
+| Cost, moderation and facilitator detail | `data/groups.csv` | **Mostly `unknown`**, see `data/NOT-LISTED.md` |
+| French wording | `assets/i18n.js` | **Drafted, not reviewed**, see `REVIEW-FR.md` |
 
-The directory currently holds **8 real listings**, taken from *CAPA Peer
-Support Report* (the May 2026 scan). They are real organizations with working
-links — but the report recorded what each programme **is**, not what it costs or
-who runs it, so many fields honestly say "not known". `data/NOT-LISTED.md`
-explains exactly what is missing and what was deliberately left out.
+The directory currently holds **16 real listings**. Eight came from *CAPA Peer
+Support Report* (the May 2026 scan). Eight more were researched and verified
+against the organizations' own pages in August 2026: Pain BC's support and
+wellness groups including its BIPOC, 2SLGBTQ+ and young adult groups, People In
+Pain Network, HELP_AB, and both of Cassie + Friends' programmes.
+
+Ten of the sixteen are run from Canada. The other six are online communities
+based elsewhere that a person here can still use, and each of those carries a
+"Based in" label so nobody mistakes one for a Canadian service.
+
+Half the listings now have confirmed cost, moderation and facilitator details.
+The other half are the ones from the report, where those fields honestly say
+"not known". `data/NOT-LISTED.md` sets out what is still missing and what was
+deliberately left out.
 
 `data/groups-template.csv` still holds six invented sample rows, marked
 `placeholder: true`. It is the blank form to copy, not live data.
@@ -55,7 +64,7 @@ A few rules the spreadsheet has to follow:
   `data/vocabularies.md`. If you type something else, the converter will tell
   you which row and column to fix.
 - **`id` must be unique** and use only lowercase letters, numbers and hyphens.
-  Never change or reuse an id once a listing is published — the id is what a
+  Never change or reuse an id once a listing is published, the id is what a
   shared link points at.
 - **Anything ending in `_fr` is optional.** If you leave it blank, the website
   shows the English text to French readers rather than showing nothing.
@@ -83,7 +92,7 @@ If something is wrong, nothing is written and you get a list like this:
 
 ```
   row 3 / column "last_verified": '15/06/2026' must be a date written as YYYY-MM-DD, e.g. 2026-03-14
-  row 5 / column "province": 'Ontario' is not an allowed value. Allowed: AB, BC, MB, ...
+  row 5 / column "province": 'Ontario' is not an allowed value. Allowed: AB, BC, MB, ..
 ```
 
 The row number is the row you see in the spreadsheet. Fix those cells and run
@@ -122,7 +131,7 @@ The site is plain files, so it can go almost anywhere.
 repository. In the repository, go to **Settings → Pages** and set **Source**
 to **GitHub Actions**. Every time the `main` branch changes, the site
 re-publishes itself. Before publishing it also re-checks the listings, the
-colour contrast, and that no file is missing — if any of those fail, the
+colour contrast, and that no file is missing, if any of those fail, the
 broken version is not published.
 
 **On the CAPA website:** copy `index.html`, `assets/` and `data/` onto the
@@ -137,7 +146,7 @@ the frame a title and let it be tall, for example:
         style="width:100%; height:1200px; border:0;"></iframe>
 ```
 
-If the site sits in a sub-folder, everything still works — every path in the
+If the site sits in a sub-folder, everything still works, every path in the
 project is relative.
 
 ---
@@ -150,12 +159,12 @@ The look follows the **Good Care Visual Identity Guidelines**
 | Colour | Used for |
 |---|---|
 | `#582D80` deep purple | Headings and links |
-| `#9F3E94` magenta | The one action colour — buttons, the top rule, active filters |
+| `#9F3E94` magenta | The one action colour, buttons, the top rule, active filters |
 | `#E8B8E5` lilac | Tints, and the accent colour in dark mode |
 | `#FCF0C2` pale yellow | The disclaimer and "please re-check" notes |
 | `#FFFFFF` white | Cards |
 
-The two pale tints are backgrounds only — they are far too light to put text on.
+The two pale tints are backgrounds only, they are far too light to put text on.
 All of these live at the top of `assets/styles.css`; change them there and
 nowhere else, then run `python3 scripts/check_contrast.py`.
 
@@ -165,13 +174,13 @@ the pale tints. If it is ever wanted back, it is in the git history.
 
 Note this identity sheet was made for the Good Care project and is co-branded
 with Psoriasis Canada. Its two purples are the same purples in the CAPA logo, so
-it carries over cleanly — but if CAPA has a separate palette for the main
+it carries over cleanly, but if CAPA has a separate palette for the main
 website, that one should win.
 
 ### About the font
 
 The brand face is **Poppins**, and it is **included in this project** at
-`assets/fonts/` — three weights, two character subsets, 39 KB in total.
+`assets/fonts/`, three weights, two character subsets, 39 KB in total.
 
 It is hosted inside the project rather than linked from Google Fonts on
 purpose. It means the page works with no internet, it keeps working if Google
@@ -181,8 +190,8 @@ party just to read a page about their health.
 Poppins is free under the SIL Open Font License; the licence travels with the
 files in `assets/fonts/OFL.txt` and must stay there if you pass this project on.
 
-If a listing ever contains letters outside those subsets — an Indigenous
-language name, for instance — that text quietly falls back to the next font in
+If a listing ever contains letters outside those subsets, an Indigenous
+language name, for instance, that text quietly falls back to the next font in
 the list. That is intended behaviour, not a bug.
 
 ## Checking the site is still accessible
@@ -213,20 +222,20 @@ What was verified when this was built:
 
 ## Giving this to another organization
 
-That is what the MIT licence is for — anyone may take this, change it, and use
+That is what the MIT licence is for, anyone may take this, change it, and use
 it, including commercially, as long as they keep the copyright notice.
 
 A group taking this over needs to change:
 
-1. `assets/config.js` — their email address and their links.
-2. `assets/capa-logo.png` — their logo.
-3. `assets/styles.css` — the colours at the very top of the file. Then run
+1. `assets/config.js`, their email address and their links.
+2. `assets/capa-logo.png`, their logo.
+3. `assets/styles.css`, the colours at the very top of the file. Then run
    `python3 scripts/check_contrast.py`, which will tell them whether their
    brand colours are readable enough. If it fails, the colours need to change,
    not the check.
-4. `assets/i18n.js` — the wording, including the name of their organization
+4. `assets/i18n.js`, the wording, including the name of their organization
    and the disclaimer.
-5. `data/` — their own listings.
+5. `data/`, their own listings.
 
 Nothing in this project is tied to a personal account, a paid service, or a
 particular company.
@@ -237,14 +246,14 @@ particular company.
 
 ```
 index.html                    the page itself
-assets/config.js              email address and links — start here
+assets/config.js              email address and links, start here
 assets/fonts/                 the Poppins brand font + its licence
 assets/i18n.js                every word on the site, English and French
 assets/styles.css             all the styling; the colours are at the top
 assets/app.js                 the search and filter logic
 data/groups.json              the listings the website reads (generated)
 data/groups.schema.json       the rules every listing must follow
-data/groups.csv               the live listings — edit this one
+data/groups.csv               the live listings, edit this one
 data/groups-template.csv      a blank copy with sample rows, for reference
 data/NOT-LISTED.md            what was left out of the directory, and why
 data/vocabularies.md          the words each column will accept
@@ -257,4 +266,4 @@ REVIEW-FR.md                  French text awaiting human review
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).

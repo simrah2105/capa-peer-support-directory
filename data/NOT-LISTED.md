@@ -2,7 +2,7 @@
 
 Everything here comes from **CAPA Peer Support Report** (the scan of arthritis
 peer support models, May 2026). These entries were left out of `groups.csv` on
-purpose. Nothing has been thrown away — this file is the record, so the
+purpose. Nothing has been thrown away, this file is the record, so the
 decisions can be revisited.
 
 The report was written to answer "what models could CAPA learn from?", which is
@@ -40,13 +40,13 @@ belong in the directory.
 | Versus Arthritis online community | `versusarthritis.org` returned **403 "This web app is stopped"** on 19 August 2026, in both a command-line check and a real browser. That is a stopped server, not a blocked bot. The listing was written and then pulled rather than pointing people at a dead page. |
 
 **To restore it:** re-check the address. If it is back, the finished row is in
-this project's git history — `git show` the commit that added `data/groups.csv`.
+this project's git history, `git show` the commit that added `data/groups.csv`.
 
 ## 3. Not peer support
 
 | Source | Why not |
 |---|---|
-| Karp et al. 2023, *Peer Support in Rheumatic Diseases* | Evidence review — supports the case for peer support, is not a service |
+| Karp et al. 2023, *Peer Support in Rheumatic Diseases* | Evidence review, supports the case for peer support, is not a service |
 | EULAR 2021 self-management recommendations | Clinical guidance |
 | ArthritisPower / PatientSpot | A research registry. Mentioned inside the CreakyJoints listing rather than listed as a support group, because signing up for research is not the same as getting support |
 
@@ -54,20 +54,28 @@ this project's git history — `git show` the commit that added `data/groups.csv
 
 ## What still needs a human
 
-Every published listing carries the programme model from the report, because
-that is what the report recorded. It does **not** carry the operational detail,
-because the report was not written to collect it. Right now:
+Sixteen listings, and the picture splits neatly in two.
 
-- **Cost is `unknown` on all 8 listings.**
-- **Moderation is `unknown` on 6 of 8.** Only NRAS and the Psoriasis Association
-  were explicitly described as moderated, and even for those two the actual
-  rules were not recorded.
-- **Facilitator type is `unknown` on all 8.** Laurie asked specifically who
-  facilitates and whether they are volunteers — that answer is not yet in here.
-- **How to join** was inferred as "sign yourself up" for the open online
-  communities. That is a reasonable reading, not a confirmed fact, and each one
-  says so in its notes.
+**The eight researched in August 2026** have confirmed cost, moderation and
+facilitator details, because those came from reading the organizations' own
+pages.
 
-None of this is a defect in the report — it answered the question it was asked.
-Filling these in is a website-and-phone-call exercise against the eight source
-URLs, and it is the single highest-value thing to do before launch.
+**The eight from the report** still say "not known" for cost, and mostly for
+moderation and facilitator type, because the report recorded what each programme
+**is** rather than how it operates. Across all sixteen:
+
+- Cost is known on 8, unknown on 8.
+- Moderation is known on 8, unknown on 8.
+- Facilitator type is known on 8, unknown on 8. Laurie asked specifically
+  whether facilitators are volunteers. For the eight Canadian and Pain BC
+  listings the answer is now yes, trained peer volunteers. For the rest it is
+  still open.
+
+Closing the remaining gaps means visiting eight source URLs and, in a few cases,
+sending an email. That is the highest value work left.
+
+## Also considered and left out
+
+| Programme | Why |
+|---|---|
+| Arthritis Rehabilitation and Education Program (AREP), Arthritis Society Canada | Ontario only, and it is a clinical rehabilitation service delivered by health professionals rather than peer support. It runs group education sessions, which makes it a reasonable thing to signpost from the Useful Resources page instead |

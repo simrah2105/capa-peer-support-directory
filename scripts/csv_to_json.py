@@ -156,7 +156,7 @@ def extra_checks(records, rows, problems):
             if rid in seen_ids:
                 problems.append(Problem(
                     row, "id",
-                    'duplicate id "%s" — already used on row %d. Every listing needs its own id.' % (rid, seen_ids[rid])
+                    'duplicate id "%s", already used on row %d. Every listing needs its own id.' % (rid, seen_ids[rid])
                 ))
             else:
                 seen_ids[rid] = row
@@ -188,7 +188,7 @@ def extra_checks(records, rows, problems):
         if record.get("moderated") == "yes" and not (record.get("moderation_notes_en") or "").strip():
             problems.append(Problem(
                 row, "moderation_notes_en",
-                'is empty. When moderated = "yes", say who moderates and what the rules are — '
+                'is empty. When moderated = "yes", say who moderates and what the rules are, '
                 "CAPA surfaces this on every listing."
             ))
 
@@ -281,7 +281,7 @@ def main():
             print("\nCompare your headings against data/groups-template.csv. Nothing was written.")
             return 1
 
-        print("Reading %s — %d listing%s, %d columns\n"
+        print("Reading %s, %d listing%s, %d columns\n"
               % (args.csv_file, len(records), "" if len(records) == 1 else "s", len(headers)))
         for record, row in zip(records, rows):
             validate_record(record, group_schema, schema, row, problems)
@@ -300,7 +300,7 @@ def main():
         return 1
 
     if args.check:
-        print("All good — %d listings, no problems." % len(records))
+        print("All good, %d listings, no problems." % len(records))
         return 0
 
     payload = {

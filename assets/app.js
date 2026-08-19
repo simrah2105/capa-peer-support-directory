@@ -1,8 +1,8 @@
 /* ==========================================================================
    CAPA Peer Support Directory
    --------------------------------------------------------------------------
-   No frameworks, no build step, no storage. Every piece of state — the
-   language, the search text, and every filter — lives in the URL, so any
+   No frameworks, no build step, no storage. Every piece of state, the
+   language, the search text, and every filter, lives in the URL, so any
    view of this page can be copied and shared as a link.
    ========================================================================== */
 
@@ -44,7 +44,7 @@
       .replace(/[\u0300-\u036f]/g, "");
   }
 
-  /** Edit distance capped at 2 — enough to forgive one typo, cheap to run. */
+  /** Edit distance capped at 2, enough to forgive one typo, cheap to run. */
   function withinOneEdit(a, b) {
     if (Math.abs(a.length - b.length) > 1) return false;
     var i = 0, j = 0, edits = 0;
@@ -119,22 +119,22 @@
   var PROVINCE_ORDER = ["national", "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"];
 
   var FILTERS = [
-    { key: "prov",   field: "province",        param: "prov",   labelKey: "filter.province",
-      prefix: "prov.",        primary: true,  order: PROVINCE_ORDER, scrollable: true },
-    { key: "format", field: "format",          param: "format", labelKey: "filter.format",
-      prefix: "format.",      primary: true,  order: ["in-person", "virtual", "hybrid", "phone", "online-forum"] },
-    { key: "cost",   field: "cost",            param: "cost",   labelKey: "filter.cost",
-      prefix: "cost.",        primary: true,  order: ["free", "membership-required", "fee", "unknown"] },
-    { key: "cond",   field: "conditions",      param: "cond",   labelKey: "filter.condition",
-      freeText: true,         primary: true,  scrollable: true },
-    { key: "glang",  field: "language",        param: "glang",  labelKey: "filter.language",
-      prefix: "lang.",        primary: false, order: ["en", "fr", "other"] },
-    { key: "fac",    field: "facilitator_type", param: "fac",   labelKey: "filter.facilitator",
+    { key: "prov",  field: "province",       param: "prov",  labelKey: "filter.province",
+      prefix: "prov.",       primary: true, order: PROVINCE_ORDER },
+    { key: "format", field: "format",         param: "format", labelKey: "filter.format",
+      prefix: "format.",     primary: true, order: ["in-person", "virtual", "hybrid", "phone", "online-forum"] },
+    { key: "cost",  field: "cost",           param: "cost",  labelKey: "filter.cost",
+      prefix: "cost.",       primary: true, order: ["free", "membership-required", "fee", "unknown"] },
+    { key: "cond",  field: "conditions",     param: "cond",  labelKey: "filter.condition",
+      freeText: true,        primary: true },
+    { key: "glang", field: "language",       param: "glang", labelKey: "filter.language",
+      prefix: "lang.",       primary: false, order: ["en", "fr", "other"] },
+    { key: "fac",   field: "facilitator_type", param: "fac",  labelKey: "filter.facilitator",
       prefix: "facilitator.", primary: false, order: ["peer-volunteer", "staff", "health-professional", "mixed", "unknown"] },
-    { key: "aud",    field: "audience",        param: "aud",    labelKey: "filter.audience",
-      prefix: "audience.",    primary: false, order: ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"] },
-    { key: "based",  field: "based_in",        param: "based",  labelKey: "filter.basedIn",
-      prefix: "based.",       primary: false, order: ["canada", "united-states", "united-kingdom", "ireland", "australia", "new-zealand", "international"] }
+    { key: "aud",   field: "audience",       param: "aud",   labelKey: "filter.audience",
+      prefix: "audience.",   primary: false, order: ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"] },
+    { key: "based", field: "based_in",       param: "based", labelKey: "filter.basedIn",
+      prefix: "based.",      primary: false, order: ["canada", "united-states", "united-kingdom", "ireland", "australia", "new-zealand", "international"] }
   ];
 
   function optionLabel(filter, value) {
@@ -258,7 +258,7 @@
     var values = facetValues(filter);
     if (!values.length) return null;
 
-    var list = el("ul", { class: "option-list" + (filter.scrollable && values.length > 6 ? " is-scrollable" : "") });
+    var list = el("ul", { class: "option-list" });
 
     values.forEach(function (value) {
       var id = "f-" + filter.key + "-" + String(value).replace(/[^a-z0-9]+/gi, "-");
@@ -370,7 +370,7 @@
     (record.language || []).forEach(function (code) { chips.appendChild(chip(t("lang." + code))); });
     chips.appendChild(chip(t("moderated." + record.moderated), "chip-mod-" + record.moderated));
     if (record.based_in && record.based_in !== "canada") {
-      /* Only flagged when it is NOT Canadian — a Canadian reader should never
+      /* Only flagged when it is NOT Canadian, a Canadian reader should never
          have to work out that a listing is run from another country. */
       chips.appendChild(chip(
         record.based_in === "international"
@@ -390,13 +390,13 @@
         detailRow(t("field.schedule"), localized(record, "schedule_notes")),
         detailRow(t("field.howToAccess"),
           [t("access." + record.how_to_access), localized(record, "how_to_access_notes")]
-            .filter(Boolean).join(" — ")),
+            .filter(Boolean).join(", ")),
         detailRow(t("field.facilitator"),
           [t("facilitator." + record.facilitator_type), localized(record, "facilitator_notes")]
-            .filter(Boolean).join(" — ")),
+            .filter(Boolean).join(", ")),
         detailRow(t("field.moderated"),
           [t("moderated." + record.moderated), localized(record, "moderation_notes")]
-            .filter(Boolean).join(" — ")),
+            .filter(Boolean).join(", ")),
         detailRow(t("filter.cost"), localized(record, "cost_notes")),
         detailRow(t("field.language"), localized(record, "language_notes")),
         detailRow(t("field.contact"), [record.contact_email, record.contact_phone].filter(Boolean).join(" · "))
@@ -522,7 +522,7 @@
 
   function applyStaticText() {
     document.documentElement.lang = lang;
-    document.title = t("site.title") + " — " + t("site.logoAlt");
+    document.title = t("site.title") + " | " + t("site.logoAlt");
 
     document.querySelectorAll("[data-i18n]").forEach(function (node) {
       node.textContent = t(node.getAttribute("data-i18n"));

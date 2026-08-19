@@ -1,18 +1,17 @@
 /* ==========================================================================
-   CAPA Peer Support Directory — all wording, in both languages
+   CAPA Peer Support Directory, all wording, in both languages
    --------------------------------------------------------------------------
    Every word the website shows is in this file. Nothing is written into the
    page itself, so changing wording here changes it everywhere.
 
-   The French was drafted by a machine and needs a human review before launch
-   — see REVIEW-FR.md.
+   The French was drafted by a machine and needs a human review before launch, see REVIEW-FR.md.
    ========================================================================== */
 
 window.I18N = {
   en: {
     /* --- page furniture --- */
     "site.title": "Peer Support Directory",
-    "site.subtitle": "Arthritis and chronic pain peer support across Canada",
+    "site.subtitle": "Find arthritis and chronic pain peer support across Canada",
     "site.logoAlt": "Canadian Arthritis Patient Alliance",
     "site.skipToResults": "Skip to results",
     "lang.switchTo": "Français",
@@ -21,22 +20,22 @@ window.I18N = {
 
     /* --- disclaimer --- */
     "disclaimer.heading": "Before you use this directory",
-    "disclaimer.body": "CAPA does not run, fund, or endorse the groups listed here. This directory exists to help you find options. Details change often, so please confirm cost, schedule, and how to join directly with the organization before you attend.",
+    "disclaimer.body": "CAPA does not run or endorse the groups listed here. We put this together so you can see what is out there. Details change often, so please check the cost, the schedule and how to join with the organization itself before you go.",
 
     /* --- search and filters --- */
     "search.label": "Search groups",
-    "search.placeholder": "Search by name, organization, or topic",
-    "search.hint": "Searches names, organizations, descriptions, and areas of focus.",
+    "search.placeholder": "Try a condition, a city, or a group name",
+    "search.hint": "Looks through names, organizations, descriptions and areas of focus.",
     "filters.heading": "Filter",
     "filters.show": "Show filters",
     "filters.hide": "Hide filters",
     "filters.clearAll": "Clear all filters",
-    "filters.moreHeading": "More filters",
+    "filters.moreHeading": "More ways to narrow this down",
     "filters.activeCount": "{n} filter applied",
     "filters.activeCount.plural": "{n} filters applied",
 
     "filter.province": "Province or territory",
-    "filter.format": "How it meets",
+    "filter.format": "How the group meets",
     "filter.cost": "Cost",
     "filter.condition": "Condition focus",
     "filter.language": "Language the group runs in",
@@ -55,7 +54,7 @@ window.I18N = {
     "based.internationalChip": "International organization",
     "filter.moderated": "Moderation",
     "filter.moderatedOnly": "Only show moderated groups",
-    "filter.moderatedHint": "Moderated means someone is responsible for the group's rules and safety.",
+    "filter.moderatedHint": "Moderated means someone is responsible for the group's rules and for keeping it safe.",
 
     /* --- results --- */
     "results.heading": "Groups",
@@ -68,8 +67,8 @@ window.I18N = {
     "results.joinAria": "How to join {name} (opens in a new tab)",
     "results.details": "Full details",
     "results.detailsHide": "Hide details",
-    "results.verified": "Details last checked {date}",
-    "results.stale": "Not checked in over a year — please confirm with the organization.",
+    "results.verified": "Last checked {date}",
+    "results.stale": "We have not checked this in over a year. Please confirm the details before you go.",
 
     /* --- record labels --- */
     "field.organization": "Run by",
@@ -88,16 +87,16 @@ window.I18N = {
 
     /* --- empty state --- */
     "empty.heading": "No groups match your filters",
-    "empty.body": "Try removing one of the filters below, or clear them all and start again.",
+    "empty.body": "Try taking one of these off, or clear everything and start again.",
     "empty.remove": "Remove “{label}”",
-    "empty.resources": "You can also browse CAPA's Useful Resources page for other kinds of support.",
+    "empty.resources": "CAPA's Useful Resources page has other kinds of support too.",
     "empty.noData": "The listings could not be loaded.",
-    "empty.noDataHelp": "If you are opening this file directly from your computer, the listings cannot load for security reasons. See the README for the one command that fixes this.",
+    "empty.noDataHelp": "If you opened this file straight from your computer, the listings cannot load, for security reasons. The README has the one command that fixes it.",
 
     /* --- suggest a group --- */
     "suggest.link": "Suggest a group or report an outdated listing",
-    "suggest.subject": "Peer Support Directory — suggestion or correction",
-    "suggest.body": "Please tell us the name of the group, where it is, and how people join. If you are reporting a correction, please include the listing name.\n\n",
+    "suggest.subject": "Peer Support Directory, suggestion or correction",
+    "suggest.body": "Tell us the name of the group, where it is, and how people join. If you are pointing out something that is wrong, let us know which listing you mean.\n\n",
 
     /* --- footer --- */
     "footer.updated": "Listings last updated {date}",
@@ -139,6 +138,9 @@ window.I18N = {
 
     /* --- vocabulary: audience --- */
     "audience.adults": "Adults",
+    "audience.young-adults": "Young adults",
+    "audience.lgbtq2s": "2SLGBTQ+ people",
+    "audience.bipoc": "Black, Indigenous and people of colour",
     "audience.youth": "Youth",
     "audience.children": "Children",
     "audience.seniors": "Older adults",
@@ -172,7 +174,7 @@ window.I18N = {
 
   fr: {
     "site.title": "Répertoire de soutien par les pairs",
-    "site.subtitle": "Soutien par les pairs pour l'arthrite et la douleur chronique au Canada",
+    "site.subtitle": "Trouvez du soutien par les pairs pour l'arthrite et la douleur chronique au Canada",
     "site.logoAlt": "Alliance canadienne des patients arthritiques",
     "site.skipToResults": "Passer aux résultats",
     "lang.switchTo": "English",
@@ -183,18 +185,18 @@ window.I18N = {
     "disclaimer.body": "L'ACPA n'organise, ne finance ni n'endosse les groupes répertoriés ici. Ce répertoire existe pour vous aider à trouver des options. Les détails changent souvent : veuillez confirmer les coûts, l'horaire et la façon de participer directement auprès de l'organisme avant de vous déplacer.",
 
     "search.label": "Rechercher des groupes",
-    "search.placeholder": "Rechercher par nom, organisme ou sujet",
+    "search.placeholder": "Essayez une affection, une ville ou un nom de groupe",
     "search.hint": "La recherche porte sur les noms, les organismes, les descriptions et les domaines d'intérêt.",
     "filters.heading": "Filtrer",
     "filters.show": "Afficher les filtres",
     "filters.hide": "Masquer les filtres",
     "filters.clearAll": "Effacer tous les filtres",
-    "filters.moreHeading": "Autres filtres",
+    "filters.moreHeading": "Autres façons d'affiner",
     "filters.activeCount": "{n} filtre appliqué",
     "filters.activeCount.plural": "{n} filtres appliqués",
 
     "filter.province": "Province ou territoire",
-    "filter.format": "Mode de rencontre",
+    "filter.format": "Comment le groupe se réunit",
     "filter.cost": "Coût",
     "filter.condition": "Affection visée",
     "filter.language": "Langue du groupe",
@@ -225,8 +227,8 @@ window.I18N = {
     "results.joinAria": "Comment participer à {name} (s'ouvre dans un nouvel onglet)",
     "results.details": "Détails complets",
     "results.detailsHide": "Masquer les détails",
-    "results.verified": "Renseignements vérifiés le {date}",
-    "results.stale": "Non vérifié depuis plus d'un an — veuillez confirmer auprès de l'organisme.",
+    "results.verified": "Vérifié le {date}",
+    "results.stale": "Nous n'avons pas vérifié cette fiche depuis plus d'un an. Confirmez les détails avant de vous déplacer.",
 
     "field.organization": "Organisé par",
     "field.facilitator": "Animé par",
@@ -243,14 +245,14 @@ window.I18N = {
     "field.city": "Lieu",
 
     "empty.heading": "Aucun groupe ne correspond à vos filtres",
-    "empty.body": "Essayez de retirer l'un des filtres ci-dessous, ou effacez-les tous et recommencez.",
+    "empty.body": "Essayez d'en retirer un, ou effacez tout et recommencez.",
     "empty.remove": "Retirer « {label} »",
     "empty.resources": "Vous pouvez aussi consulter la page Ressources utiles de l'ACPA pour d'autres formes de soutien.",
     "empty.noData": "Les fiches n'ont pas pu être chargées.",
     "empty.noDataHelp": "Si vous ouvrez ce fichier directement depuis votre ordinateur, les fiches ne peuvent pas se charger pour des raisons de sécurité. Consultez le fichier README pour la commande qui règle ce problème.",
 
     "suggest.link": "Proposer un groupe ou signaler une fiche périmée",
-    "suggest.subject": "Répertoire de soutien par les pairs — proposition ou correction",
+    "suggest.subject": "Répertoire de soutien par les pairs, proposition ou correction",
     "suggest.body": "Veuillez nous indiquer le nom du groupe, sa localisation et la façon d'y participer. S'il s'agit d'une correction, veuillez préciser le nom de la fiche concernée.\n\n",
 
     "footer.updated": "Fiches mises à jour le {date}",
@@ -286,6 +288,9 @@ window.I18N = {
     "access.unknown": "Inconnu",
 
     "audience.adults": "Adultes",
+    "audience.young-adults": "Jeunes adultes",
+    "audience.lgbtq2s": "Personnes 2SLGBTQ+",
+    "audience.bipoc": "Personnes noires, autochtones et de couleur",
     "audience.youth": "Jeunes",
     "audience.children": "Enfants",
     "audience.seniors": "Aînés",
@@ -330,6 +335,11 @@ window.I18N = {
     "fibromyalgia": "fibromyalgie",
     "chronic pain": "douleur chronique",
     "juvenile arthritis": "arthrite juvénile",
+    "inflammatory arthritis": "arthrite inflammatoire",
+    "autoinflammatory disease": "maladie auto-inflammatoire",
+    "joint replacement": "remplacement articulaire",
+    "parenting a child with arthritis": "parent d'un enfant arthritique",
+    "social connection": "liens sociaux",
     "gout": "goutte",
     "emotional support": "soutien émotionnel",
     "newly diagnosed": "nouveau diagnostic",

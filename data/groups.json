@@ -8,10 +8,14 @@
       "name_en": "Arthritis Connections online support groups",
       "organization": "Arthritis Society Canada",
       "based_in": "canada",
-      "description_en": "A national peer support programme that brings people affected by arthritis together online to share experiences, find emotional support, and learn from one another. It is open to people affected by arthritis generally rather than a single diagnosis.",
-      "description_fr": "Programme national de soutien par les pairs qui réunit en ligne des personnes touchées par l'arthrite pour partager leurs expériences, trouver du soutien émotionnel et apprendre les unes des autres. Ouvert aux personnes touchées par l'arthrite en général plutôt qu'à un seul diagnostic.",
+      "description_en": "Peer support groups that meet online throughout the month, led by trained volunteers who live with arthritis themselves. There are nine kinds of group, including ones for osteoarthritis, rheumatoid arthritis, psoriatic arthritis, pain, staying active, caregivers, and people preparing for or recovering from joint replacement surgery.",
+      "description_fr": "Groupes de soutien par les pairs qui se réunissent en ligne tout au long du mois, animés par des bénévoles formés qui vivent eux-mêmes avec l'arthrite. Neuf types de groupes existent, dont l'arthrose, la polyarthrite rhumatoïde, l'arthrite psoriasique, la douleur, l'activité physique, les proches aidants et le remplacement articulaire.",
       "conditions": [
-        "any arthritis"
+        "any arthritis",
+        "osteoarthritis",
+        "rheumatoid arthritis",
+        "psoriatic arthritis",
+        "inflammatory arthritis"
       ],
       "format": "virtual",
       "province": [
@@ -19,31 +23,41 @@
       ],
       "city": null,
       "language": [
-        "en"
+        "en",
+        "fr"
       ],
-      "language_notes_en": "French-language availability was not confirmed in CAPA's scan.",
-      "language_notes_fr": "La disponibilité en français n'a pas été confirmée lors de l'analyse de l'ACPA.",
-      "cost": "unknown",
-      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
-      "how_to_access": "unknown",
-      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
+      "language_notes_en": "The English groups are booked through arthritis.ca. There is a French site at arthrite.ca.",
+      "language_notes_fr": "Les groupes en anglais se réservent via arthritis.ca. Un site en français existe à arthrite.ca.",
+      "cost": "free",
+      "cost_notes_en": "Free to attend. You need a free Jane account to book.",
+      "cost_notes_fr": "Participation gratuite. Un compte Jane gratuit est requis pour réserver.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Create a free account on Jane, pick a group, and the Zoom link arrives in your confirmation email.",
+      "how_to_access_notes_fr": "Créez un compte gratuit sur Jane, choisissez un groupe, et le lien Zoom vous parvient par courriel de confirmation.",
       "access_url": "https://arthritis.ca/support-education/arthritis-connections/",
-      "facilitator_type": "unknown",
-      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
-      "moderated": "unknown",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Trained volunteers who understand arthritis firsthand.",
+      "facilitator_notes_fr": "Des bénévoles formés qui connaissent l'arthrite de première main.",
+      "moderated": "yes",
+      "moderation_notes_en": "Every group is led by a trained volunteer facilitator, and the programme states plainly that the groups do not give medical advice or guidance. A written set of participant rules was not published on the page.",
+      "moderation_notes_fr": "Chaque groupe est animé par un bénévole formé, et le programme indique clairement que les groupes ne donnent pas de conseils médicaux. Aucun règlement écrit destiné aux participants n'était publié sur la page.",
       "focus_areas": [
         "emotional support",
-        "self-management"
+        "pain and fatigue",
+        "movement",
+        "self-management",
+        "caregivers",
+        "joint replacement"
       ],
       "audience": [
-        "adults"
+        "adults",
+        "caregivers"
       ],
+      "schedule_notes_en": "Groups run at various times through the month.",
+      "schedule_notes_fr": "Les groupes ont lieu à divers moments du mois.",
       "contact_email": null,
       "contact_phone": null,
-      "last_verified": "2026-05-29",
+      "last_verified": "2026-08-19",
       "source_url": "https://arthritis.ca/support-education/arthritis-connections/"
     },
     {
@@ -116,7 +130,7 @@
       "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "how_to_access": "self-refer",
-      "how_to_access_notes_en": "This is an open online community — you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
+      "how_to_access_notes_en": "This is an open online community, you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
       "how_to_access_notes_fr": "Il s'agit d'une communauté en ligne ouverte : vous vous y inscrivez vous-même via le site Web. Les étapes exactes n'ont pas été consignées.",
       "access_url": "https://creakyjoints.org/",
       "facilitator_type": "unknown",
@@ -145,7 +159,7 @@
       "name_en": "NRAS online community on HealthUnlocked",
       "organization": "National Rheumatoid Arthritis Society (NRAS)",
       "based_in": "united-kingdom",
-      "description_en": "A moderated online community for people living with rheumatoid arthritis, hosted on the HealthUnlocked platform. NRAS is a UK organization, but the online community itself can be read and posted in from anywhere. Its UK-only services — local groups, telephone peer support and the Right Start newly-diagnosed pathway — are not part of this listing.",
+      "description_en": "A moderated online community for people living with rheumatoid arthritis, hosted on the HealthUnlocked platform. NRAS is a UK organization, but the online community itself can be read and posted in from anywhere. Its UK-only services, local groups, telephone peer support and the Right Start newly-diagnosed pathway, are not part of this listing.",
       "description_fr": "Communauté en ligne modérée pour les personnes vivant avec la polyarthrite rhumatoïde, hébergée sur la plateforme HealthUnlocked. NRAS est un organisme britannique, mais la communauté en ligne est accessible en lecture et en publication depuis n'importe où. Ses services réservés au Royaume-Uni ne font pas partie de cette fiche.",
       "conditions": [
         "rheumatoid arthritis"
@@ -162,15 +176,15 @@
       "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "how_to_access": "self-refer",
-      "how_to_access_notes_en": "This is an open online community — you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
+      "how_to_access_notes_en": "This is an open online community, you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
       "how_to_access_notes_fr": "Il s'agit d'une communauté en ligne ouverte : vous vous y inscrivez vous-même via le site Web. Les étapes exactes n'ont pas été consignées.",
       "access_url": "https://nras.org.uk/information-support/connect-with-others/",
       "facilitator_type": "unknown",
       "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "moderated": "yes",
-      "moderation_notes_en": "CAPA's scan recorded this as a moderated online community. Who moderates it and what the published rules are were not recorded — confirm with NRAS before relying on this.",
-      "moderation_notes_fr": "L'analyse de l'ACPA l'a consignée comme une communauté en ligne modérée. L'identité des modérateurs et les règles publiées n'ont pas été consignées — à confirmer auprès de NRAS.",
+      "moderation_notes_en": "CAPA's scan recorded this as a moderated online community. Who moderates it and what the published rules are were not recorded, confirm with NRAS before relying on this.",
+      "moderation_notes_fr": "L'analyse de l'ACPA l'a consignée comme une communauté en ligne modérée. L'identité des modérateurs et les règles publiées n'ont pas été consignées, à confirmer auprès de NRAS.",
       "focus_areas": [
         "emotional support",
         "newly diagnosed",
@@ -210,15 +224,15 @@
       "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "how_to_access": "self-refer",
-      "how_to_access_notes_en": "This is an open online community — you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
+      "how_to_access_notes_en": "This is an open online community, you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
       "how_to_access_notes_fr": "Il s'agit d'une communauté en ligne ouverte : vous vous y inscrivez vous-même via le site Web. Les étapes exactes n'ont pas été consignées.",
       "access_url": "https://www.psoriasis-association.org.uk/peer-to-peer-support",
       "facilitator_type": "unknown",
       "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "moderated": "yes",
-      "moderation_notes_en": "CAPA's scan recorded these as moderated peer forums, with a separate private Facebook group. The specific rules and who enforces them were not recorded — confirm with the Psoriasis Association.",
-      "moderation_notes_fr": "L'analyse de l'ACPA les a consignés comme des forums de pairs modérés, avec un groupe Facebook privé distinct. Les règles précises et les personnes qui les appliquent n'ont pas été consignées — à confirmer auprès de l'organisme.",
+      "moderation_notes_en": "CAPA's scan recorded these as moderated peer forums, with a separate private Facebook group. The specific rules and who enforces them were not recorded, confirm with the Psoriasis Association.",
+      "moderation_notes_fr": "L'analyse de l'ACPA les a consignés comme des forums de pairs modérés, avec un groupe Facebook privé distinct. Les règles précises et les personnes qui les appliquent n'ont pas été consignées, à confirmer auprès de l'organisme.",
       "focus_areas": [
         "emotional support",
         "newly diagnosed"
@@ -257,7 +271,7 @@
       "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
       "how_to_access": "self-refer",
-      "how_to_access_notes_en": "This is an open online community — you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
+      "how_to_access_notes_en": "This is an open online community, you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
       "how_to_access_notes_fr": "Il s'agit d'une communauté en ligne ouverte : vous vous y inscrivez vous-même via le site Web. Les étapes exactes n'ont pas été consignées.",
       "access_url": "https://www.psoriasis.org/talk-psoriasis/",
       "facilitator_type": "unknown",
@@ -367,6 +381,393 @@
       "contact_phone": null,
       "last_verified": "2026-05-29",
       "source_url": "https://spondylitis.org/resources-support/support-resources/"
+    },
+    {
+      "id": "pain-bc-support-wellness-groups",
+      "placeholder": false,
+      "name_en": "Pain Support and Wellness Groups",
+      "organization": "Pain BC",
+      "based_in": "canada",
+      "description_en": "Free two hour groups for people living with persistent pain, run by trained peer facilitators who live with pain themselves. Each session mixes learning, group discussion and gentle movement. Groups run for regions across British Columbia, and you can join one outside your own region if the timing suits you better.",
+      "description_fr": "Groupes gratuits de deux heures pour les personnes vivant avec une douleur persistante, animés par des pairs formés qui vivent eux-mêmes avec la douleur. Chaque séance combine apprentissage, discussion de groupe et mouvement en douceur. Des groupes existent pour les régions de la Colombie-Britannique, et vous pouvez joindre celui d'une autre région si l'horaire vous convient mieux.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "virtual",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Free. You do need to register.",
+      "cost_notes_fr": "Gratuit. L'inscription est requise.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
+      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
+      "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
+      "moderated": "yes",
+      "moderation_notes_en": "Groups are run by trained peer facilitators whose job includes keeping the group respectful and inclusive. Sessions are confidential and Pain BC does not record them.",
+      "moderation_notes_fr": "Les groupes sont animés par des pairs formés dont le rôle comprend le maintien d'un climat respectueux et inclusif. Les séances sont confidentielles et ne sont pas enregistrées.",
+      "focus_areas": [
+        "pain and fatigue",
+        "self-management",
+        "movement",
+        "emotional support"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "schedule_notes_en": "Most groups meet twice a month on a Tuesday, either 11am to 1pm or 6pm to 8pm. You can dial in by phone if you cannot join by video.",
+      "schedule_notes_fr": "La plupart des groupes se réunissent deux fois par mois le mardi, de 11 h à 13 h ou de 18 h à 20 h. Une participation par téléphone est possible.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+    },
+    {
+      "id": "pain-bc-bipoc-group",
+      "placeholder": false,
+      "name_en": "BIPOC Pain Support and Wellness Group",
+      "name_fr": "Groupe de soutien pour personnes noires, autochtones et de couleur",
+      "organization": "Pain BC",
+      "based_in": "canada",
+      "description_en": "A monthly Pain BC group for Black, Indigenous and people of colour who live with pain, so that people can talk about pain without having to explain or defend their experience of the health system first.",
+      "description_fr": "Groupe mensuel de Pain BC pour les personnes noires, autochtones et de couleur qui vivent avec la douleur, afin de pouvoir parler de la douleur sans avoir d'abord à expliquer ou justifier son expérience du système de santé.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "virtual",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Free. You do need to register.",
+      "cost_notes_fr": "Gratuit. L'inscription est requise.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
+      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
+      "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
+      "moderated": "yes",
+      "moderation_notes_en": "Groups are run by trained peer facilitators whose job includes keeping the group respectful and inclusive. Sessions are confidential and Pain BC does not record them.",
+      "moderation_notes_fr": "Les groupes sont animés par des pairs formés dont le rôle comprend le maintien d'un climat respectueux et inclusif. Les séances sont confidentielles et ne sont pas enregistrées.",
+      "focus_areas": [
+        "pain and fatigue",
+        "emotional support",
+        "social connection"
+      ],
+      "audience": [
+        "bipoc"
+      ],
+      "schedule_notes_en": "Monthly, on the third Tuesday.",
+      "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+    },
+    {
+      "id": "pain-bc-lgbtq2s-group",
+      "placeholder": false,
+      "name_en": "2SLGBTQ+ Pain Support and Wellness Group",
+      "name_fr": "Groupe de soutien 2SLGBTQ+",
+      "organization": "Pain BC",
+      "based_in": "canada",
+      "description_en": "A monthly Pain BC group for people who identify as 2SLGBTQ+ and live with persistent pain.",
+      "description_fr": "Groupe mensuel de Pain BC pour les personnes qui s'identifient comme 2SLGBTQ+ et vivent avec une douleur persistante.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "virtual",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Free. You do need to register.",
+      "cost_notes_fr": "Gratuit. L'inscription est requise.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
+      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
+      "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
+      "moderated": "yes",
+      "moderation_notes_en": "Groups are run by trained peer facilitators whose job includes keeping the group respectful and inclusive. Sessions are confidential and Pain BC does not record them.",
+      "moderation_notes_fr": "Les groupes sont animés par des pairs formés dont le rôle comprend le maintien d'un climat respectueux et inclusif. Les séances sont confidentielles et ne sont pas enregistrées.",
+      "focus_areas": [
+        "pain and fatigue",
+        "emotional support",
+        "social connection"
+      ],
+      "audience": [
+        "lgbtq2s"
+      ],
+      "schedule_notes_en": "Monthly, on the third Tuesday.",
+      "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+    },
+    {
+      "id": "pain-bc-young-adults-group",
+      "placeholder": false,
+      "name_en": "Young Adults Pain Support and Wellness Group",
+      "name_fr": "Groupe de soutien pour jeunes adultes",
+      "organization": "Pain BC",
+      "based_in": "canada",
+      "description_en": "A monthly Pain BC group for people aged 18 to 35 living with persistent pain, where the conversation fits where you actually are in life.",
+      "description_fr": "Groupe mensuel de Pain BC pour les personnes de 18 à 35 ans vivant avec une douleur persistante, où la discussion correspond à l'étape de vie où vous êtes.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "virtual",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Free. You do need to register.",
+      "cost_notes_fr": "Gratuit. L'inscription est requise.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
+      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
+      "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
+      "moderated": "yes",
+      "moderation_notes_en": "Groups are run by trained peer facilitators whose job includes keeping the group respectful and inclusive. Sessions are confidential and Pain BC does not record them.",
+      "moderation_notes_fr": "Les groupes sont animés par des pairs formés dont le rôle comprend le maintien d'un climat respectueux et inclusif. Les séances sont confidentielles et ne sont pas enregistrées.",
+      "focus_areas": [
+        "pain and fatigue",
+        "emotional support",
+        "social connection"
+      ],
+      "audience": [
+        "young-adults"
+      ],
+      "schedule_notes_en": "Monthly, on the third Tuesday.",
+      "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+    },
+    {
+      "id": "people-in-pain-network",
+      "placeholder": false,
+      "name_en": "Pain self-management groups",
+      "organization": "People In Pain Network",
+      "based_in": "canada",
+      "description_en": "Peer led groups where people living with persistent pain learn and practise self-management skills together. Volunteer peer leaders run regular meetings. British Columbia has the largest network of groups, and there are groups running in Alberta, Quebec and Nova Scotia.",
+      "description_fr": "Groupes animés par des pairs où les personnes vivant avec une douleur persistante apprennent et mettent en pratique des habiletés d'autogestion. Des pairs bénévoles animent des rencontres régulières. La Colombie-Britannique compte le plus grand réseau de groupes, et il en existe en Alberta, au Québec et en Nouvelle-Écosse.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "hybrid",
+      "province": [
+        "national",
+        "BC",
+        "AB",
+        "QC",
+        "NS"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "There is no cost to attend.",
+      "cost_notes_fr": "La participation est sans frais.",
+      "how_to_access": "sign-up-form",
+      "how_to_access_notes_en": "Register for a meeting through the network's booking page.",
+      "how_to_access_notes_fr": "Inscrivez-vous à une rencontre via la page de réservation du réseau.",
+      "access_url": "https://www.pipain.com/",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Volunteer peer leaders who live with pain themselves and coordinate the meetings.",
+      "facilitator_notes_fr": "Des pairs bénévoles qui vivent eux-mêmes avec la douleur et coordonnent les rencontres.",
+      "moderated": "yes",
+      "moderation_notes_en": "Peer leaders run the meetings and are responsible for keeping them welcoming and comfortable. A written set of participant rules was not published on the site.",
+      "moderation_notes_fr": "Les pairs animateurs dirigent les rencontres et veillent à ce qu'elles restent accueillantes. Aucun règlement écrit pour les participants n'était publié sur le site.",
+      "focus_areas": [
+        "pain and fatigue",
+        "self-management",
+        "emotional support"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://www.pipain.com/"
+    },
+    {
+      "id": "help-ab",
+      "placeholder": false,
+      "name_en": "HELP_AB community support groups",
+      "organization": "HELP_AB",
+      "based_in": "canada",
+      "description_en": "An Alberta group offering support to people living with chronic pain and to their families, online, over the phone, and in person at community support groups. They also hold community information meetings around the province.",
+      "description_fr": "Groupe albertain offrant du soutien aux personnes vivant avec une douleur chronique et à leurs familles, en ligne, par téléphone et en personne lors de groupes de soutien communautaires. Des séances d'information communautaires ont aussi lieu ailleurs dans la province.",
+      "conditions": [
+        "chronic pain",
+        "any arthritis"
+      ],
+      "format": "hybrid",
+      "province": [
+        "AB"
+      ],
+      "city": "Edmonton and other locations across Alberta",
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Meetings are free to attend.",
+      "cost_notes_fr": "Les rencontres sont gratuites.",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Get in touch by email or phone, or through their Facebook group, to find out what is running and where.",
+      "how_to_access_notes_fr": "Communiquez par courriel ou téléphone, ou via leur groupe Facebook, pour savoir ce qui est offert et où.",
+      "access_url": "https://helpalbertaspain.com/",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Run by a small volunteer team of directors and advocates. Which person leads which group was not stated.",
+      "facilitator_notes_fr": "Animé par une petite équipe bénévole de directeurs et de défenseurs. La personne qui anime chaque groupe n'est pas précisée.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "pain and fatigue",
+        "emotional support",
+        "advocacy"
+      ],
+      "audience": [
+        "adults",
+        "families",
+        "caregivers"
+      ],
+      "contact_email": "helpalbertaspain@gmail.com",
+      "contact_phone": "780 851 2480",
+      "last_verified": "2026-08-19",
+      "source_url": "https://helpalbertaspain.com/"
+    },
+    {
+      "id": "cassie-friends-parent-support-network",
+      "placeholder": false,
+      "name_en": "Juvenile Arthritis Parent Support Network",
+      "organization": "Cassie + Friends",
+      "based_in": "canada",
+      "description_en": "A private online community for parents and families of children living with juvenile arthritis and other rheumatic diseases. It is a place to ask questions, share worries and successes, and hear from families both nearby and across the country. It runs as a private Facebook group.",
+      "description_fr": "Communauté en ligne privée pour les parents et les familles d'enfants vivant avec une arthrite juvénile ou d'autres maladies rhumatismales. On peut y poser des questions, partager ses inquiétudes et ses réussites, et échanger avec des familles d'ici et de partout au pays. Elle fonctionne comme un groupe Facebook privé.",
+      "conditions": [
+        "juvenile arthritis",
+        "lupus",
+        "autoinflammatory disease"
+      ],
+      "format": "online-forum",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "cost": "free",
+      "cost_notes_en": "Free to join.",
+      "cost_notes_fr": "Adhésion gratuite.",
+      "how_to_access": "self-refer",
+      "how_to_access_notes_en": "Join the private Facebook community through the link on the support network page.",
+      "how_to_access_notes_fr": "Joignez la communauté Facebook privée par le lien sur la page du réseau de soutien.",
+      "access_url": "https://cassieandfriends.ca/supportnetwork/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "Who moderates the group day to day was not stated on the page.",
+      "facilitator_notes_fr": "La page ne précise pas qui modère le groupe au quotidien.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "parenting a child with arthritis",
+        "emotional support",
+        "newly diagnosed",
+        "advocacy"
+      ],
+      "audience": [
+        "caregivers",
+        "families"
+      ],
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://cassieandfriends.ca/supportnetwork/"
+    },
+    {
+      "id": "cassie-friends-tag",
+      "placeholder": false,
+      "name_en": "Teen Arthritis + Autoinflammatory Groups (TAG)",
+      "organization": "Cassie + Friends",
+      "based_in": "canada",
+      "description_en": "A peer group for teenagers aged 12 to 17 living with juvenile arthritis, lupus and similar conditions. Chapters hold social events through the year, and each one is led by young adults who grew up with rheumatic disease themselves. Teens and young adults can also ask about starting a chapter in their own town.",
+      "description_fr": "Groupe de pairs pour les adolescents de 12 à 17 ans vivant avec une arthrite juvénile, un lupus ou des affections semblables. Les chapitres organisent des activités sociales durant l'année, chacun animé par de jeunes adultes ayant eux-mêmes grandi avec une maladie rhumatismale. Les jeunes peuvent aussi demander à créer un chapitre dans leur ville.",
+      "conditions": [
+        "juvenile arthritis",
+        "lupus",
+        "autoinflammatory disease"
+      ],
+      "format": "in-person",
+      "province": [
+        "AB",
+        "ON",
+        "NS"
+      ],
+      "city": "Calgary, Edmonton, Toronto, London and Halifax",
+      "language": [
+        "en"
+      ],
+      "cost": "unknown",
+      "cost_notes_en": "Cost was not stated on the page.",
+      "cost_notes_fr": "Le coût n'était pas indiqué sur la page.",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Join the mailing list to hear about upcoming socials and workshops, or email the TAG team about starting a chapter.",
+      "how_to_access_notes_fr": "Inscrivez-vous à la liste de diffusion pour connaître les prochaines activités, ou écrivez à l'équipe TAG pour créer un chapitre.",
+      "access_url": "https://cassieandfriends.ca/taggroups/",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Chapters are led by young adults who have navigated rheumatic disease themselves. The programme describes itself as hosted by youth, for youth.",
+      "facilitator_notes_fr": "Les chapitres sont animés par de jeunes adultes ayant vécu avec une maladie rhumatismale. Le programme se décrit comme fait par et pour les jeunes.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "social connection",
+        "emotional support",
+        "young adults"
+      ],
+      "audience": [
+        "youth"
+      ],
+      "contact_email": null,
+      "contact_phone": null,
+      "last_verified": "2026-08-19",
+      "source_url": "https://cassieandfriends.ca/taggroups/"
     }
   ]
 }

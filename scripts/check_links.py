@@ -104,7 +104,7 @@ def main():
     real = {u: w for u, w in urls.items() if u not in placeholders}
 
     if placeholders:
-        print("\nPLACEHOLDER LINKS (sample listings — not checked)")
+        print("\nPLACEHOLDER LINKS (sample listings, not checked)")
         print("-" * 74)
         for url in sorted(placeholders):
             print("  SKIP   %s" % url)

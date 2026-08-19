@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CAPA Peer Support Directory — settings
+   CAPA Peer Support Directory, settings
    --------------------------------------------------------------------------
    This is the only file you need to edit to point the directory at CAPA's
    real addresses. Everything marked TODO must be filled in before launch.

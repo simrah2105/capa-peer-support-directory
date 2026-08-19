@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://arthritispatient.ca/peer-support/groups.schema.json",
-  "title": "CAPA Peer Support Directory — group listing",
+  "title": "CAPA Peer Support Directory, group listing",
   "description": "One record per peer support group or service. Free-text fields carry _en and _fr variants; _fr may be empty and the app falls back to _en.",
   "type": "object",
   "required": ["records"],
@@ -28,7 +28,7 @@
         "id": {
           "type": "string",
           "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-          "description": "Stable slug. Never reuse or recycle an id — it is what a shared link points at."
+          "description": "Stable slug. Never reuse or recycle an id, it is what a shared link points at."
         },
         "placeholder": {
           "type": "boolean",
@@ -68,7 +68,7 @@
           "type": "array",
           "minItems": 1,
           "items": { "type": "string", "enum": ["en", "fr", "other"] },
-          "description": "Language the group is RUN in — not the language of this listing."
+          "description": "Language the group is RUN in, not the language of this listing."
         },
         "language_notes_en": { "type": "string" },
         "language_notes_fr": { "type": "string" },
@@ -107,7 +107,7 @@
           "minItems": 1,
           "items": {
             "type": "string",
-            "enum": ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"]
+            "enum": ["adults", "young-adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "lgbtq2s", "bipoc", "anyone"]
           }
         },
         "schedule_notes_en": { "type": "string" },

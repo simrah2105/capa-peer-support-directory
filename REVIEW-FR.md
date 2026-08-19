@@ -3,8 +3,8 @@
 All French wording in this project was **drafted by a machine and has not been
 reviewed by a French speaker.** It should not be treated as final.
 
-Nothing is technically broken if the review is delayed — the site works in both
-languages today — but the French should be read by a person before CAPA points
+Nothing is technically broken if the review is delayed, the site works in both
+languages today, but the French should be read by a person before CAPA points
 the public at it, especially the disclaimer, which carries a liability meaning.
 
 ## What needs reviewing
@@ -12,7 +12,7 @@ the public at it, especially the disclaimer, which carries a liability meaning.
 | Where | What it is | Priority |
 |---|---|---|
 | `assets/i18n.js` → `fr` | Every interface word: buttons, filter names, headings, the empty state | All of it |
-| `assets/i18n.js` → `fr` → `disclaimer.body` | The "CAPA does not run or endorse these groups" paragraph | **Highest** — this is the legal framing |
+| `assets/i18n.js` → `fr` → `disclaimer.body` | The "CAPA does not run or endorse these groups" paragraph | **Highest**, this is the legal framing |
 | `assets/i18n.js` → `fr` → `filter.moderatedHint` | The explanation of what moderation means | High |
 | `assets/i18n.js` → `terms` | French for conditions and focus areas | Medium |
 | `data/groups.json` → the `_fr` fields | French descriptions of each listing | Comes from the spreadsheet, not from here |
@@ -22,7 +22,7 @@ the public at it, especially the disclaimer, which carries a liability meaning.
 Every real listing has an **empty `name_fr`**, so French readers see the English
 name. That is on purpose: inventing a French name for another organization's
 programme would be putting words in their mouth. Where an organization publishes
-its own French name — Arthritis Society Canada almost certainly does — copy that
+its own French name. Arthritis Society Canada almost certainly does, copy that
 official name into the `name_fr` column of `data/groups.csv`. Do not translate
 one yourself.
 
@@ -44,7 +44,7 @@ one yourself.
 ## How to make a correction
 
 Open `assets/i18n.js`, find the line under `fr:`, and change the text between
-the quote marks. Change nothing to the left of the colon — that is the name the
+the quote marks. Change nothing to the left of the colon, that is the name the
 website looks the wording up by.
 
 ```js
