@@ -19,6 +19,12 @@ CSS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 # (foreground token, background token, minimum ratio, what it is)
 PAIRS = [
     ("--text",        "--bg",      4.5, "body text on the page"),
+    ("--heading",     "--bg",      4.5, "headings on the page"),
+    ("--heading",     "--card",    4.5, "headings on a card"),
+    ("--heading",     "--surface", 4.5, "headings on a panel"),
+    ("--text",        "--callout", 4.5, "text in the disclaimer callout"),
+    ("--text",        "--badge",   4.5, "the SAMPLE badge label"),
+    ("--text",        "--accent-soft", 4.5, "text on a selected filter row"),
     ("--text",        "--card",    4.5, "text inside a listing card"),
     ("--text",        "--surface", 4.5, "text on the filter/disclaimer panel"),
     ("--text-muted",  "--bg",      4.5, "quiet text (organization, dates)"),

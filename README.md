@@ -136,6 +136,54 @@ project is relative.
 
 ---
 
+## Colours and type
+
+The look follows the **Good Care Visual Identity Guidelines**
+(`Good Care Branding.pdf`):
+
+| Colour | Used for |
+|---|---|
+| `#582D80` deep purple | Headings and links |
+| `#9F3E94` magenta | The one action colour — buttons, the top rule, active filters |
+| `#E8B8E5` lilac | Tints, and the accent colour in dark mode |
+| `#FCF0C2` pale yellow | The disclaimer and "please re-check" notes |
+| `#FFFFFF` white | Cards |
+
+The two pale tints are backgrounds only — they are far too light to put text on.
+All of these live at the top of `assets/styles.css`; change them there and
+nowhere else, then run `python3 scripts/check_contrast.py`.
+
+Note this identity sheet was made for the Good Care project and is co-branded
+with Psoriasis Canada. Its two purples are the same purples in the CAPA logo, so
+it carries over cleanly — but if CAPA has a separate palette for the main
+website, that one should win.
+
+### About the font
+
+The brand face is **Poppins**. The stylesheet asks for it first and falls back
+to the closest geometric sans faces that come with macOS and Windows, so the
+page keeps its shape either way. **Poppins is not currently included in this
+project**, which means most visitors will see the fallback.
+
+To use the real thing, download the Poppins Regular, SemiBold and Bold `.woff2`
+files (it is free, under the Open Font License), put them in `assets/fonts/`,
+and add this to the very top of `assets/styles.css`:
+
+```css
+@font-face {
+  font-family: "Poppins"; font-style: normal; font-weight: 400;
+  font-display: swap; src: url("fonts/poppins-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins"; font-style: normal; font-weight: 700;
+  font-display: swap; src: url("fonts/poppins-bold.woff2") format("woff2");
+}
+```
+
+Host the files in the project rather than linking to Google Fonts. It keeps the
+site self-contained, it works offline, and it means visitors' browsers never
+make a request to a third party just to read the page.
+
 ## Checking the site is still accessible
 
 Accessibility is the point of this project, not a finishing touch. Two of the
@@ -153,8 +201,8 @@ What was verified when this was built:
 
 - **axe-core 4.13** found **no violations** across English, French, light mode,
   dark mode, mobile width, the empty state, and with all panels expanded.
-- **All 32 colour pairs** pass WCAG 2.2 AA in both light and dark mode.
-- **All 49 things you can press** are at least 44 x 44 pixels.
+- **All 44 colour pairs** pass WCAG 2.2 AA in both light and dark mode.
+- **Everything you can press** is at least 44 x 44 pixels.
 - **No sideways scrolling** at 320 pixels wide, at 200% text size, or both at
   once, in either language.
 - Keyboard-only: every control reachable in a sensible order, with a visible
