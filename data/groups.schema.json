@@ -20,7 +20,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "name_en", "organization", "description_en", "conditions",
+        "id", "name_en", "organization", "based_in", "description_en", "conditions",
         "format", "province", "language", "cost", "how_to_access",
         "facilitator_type", "moderated", "focus_areas", "audience", "last_verified"
       ],
@@ -37,6 +37,11 @@
         "name_en": { "type": "string", "minLength": 1 },
         "name_fr": { "type": "string" },
         "organization": { "type": "string", "minLength": 1 },
+        "based_in": {
+          "type": "string",
+          "enum": ["canada", "united-states", "united-kingdom", "ireland", "australia", "new-zealand", "international"],
+          "description": "Where the organization running this is based. Shown on every card so nobody assumes a foreign service is Canadian."
+        },
         "description_en": { "type": "string", "minLength": 1 },
         "description_fr": { "type": "string" },
         "conditions": {

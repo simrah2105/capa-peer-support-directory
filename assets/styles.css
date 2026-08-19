@@ -112,28 +112,9 @@
           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:            #16121a;
-    --surface:       #201a27;
-    --card:          #1e1823;
-    --text:          #ede7f1;
-    --text-muted:    #b9aec3;
-    --heading:       #e8b8e5;
-    --border:        #362d40;
-    --border-strong: #746781;
-    --accent:        #e8b8e5;
-    --accent-solid:  #e8b8e5;
-    --accent-on:     #2b1440;
-    --accent-soft:   #2b2233;
-    --focus:         #e8b8e5;
-    --callout:       #251e2d;
-    --callout-edge:  #e8b8e5;
-    --badge:         #2e2438;
-    --shadow:        0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-lift:   0 2px 6px rgba(0, 0, 0, 0.5);
-  }
-}
+/* This directory is light-only, to match the Good Care identity sheet, which
+   is built on white and the two pale brand tints. A dark theme was built and
+   removed on request; git history has it if it is ever wanted back. */
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -402,6 +383,8 @@ fieldset.filter-group legend {
   font-weight: 600; border-color: var(--border-strong);
 }
 .chip-mod-yes { background: var(--accent-soft); }
+/* A non-Canadian listing is called out by its words; the tint only reinforces. */
+.chip-based { font-weight: 600; border-color: var(--border-strong); background: var(--callout); }
 
 .card-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
 

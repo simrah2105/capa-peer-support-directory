@@ -132,7 +132,9 @@
     { key: "fac",    field: "facilitator_type", param: "fac",   labelKey: "filter.facilitator",
       prefix: "facilitator.", primary: false, order: ["peer-volunteer", "staff", "health-professional", "mixed", "unknown"] },
     { key: "aud",    field: "audience",        param: "aud",    labelKey: "filter.audience",
-      prefix: "audience.",    primary: false, order: ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"] }
+      prefix: "audience.",    primary: false, order: ["adults", "youth", "children", "seniors", "caregivers", "families", "women", "men", "anyone"] },
+    { key: "based",  field: "based_in",        param: "based",  labelKey: "filter.basedIn",
+      prefix: "based.",       primary: false, order: ["canada", "united-states", "united-kingdom", "ireland", "australia", "new-zealand", "international"] }
   ];
 
   function optionLabel(filter, value) {
@@ -367,10 +369,20 @@
     chips.appendChild(chip(t("cost." + record.cost)));
     (record.language || []).forEach(function (code) { chips.appendChild(chip(t("lang." + code))); });
     chips.appendChild(chip(t("moderated." + record.moderated), "chip-mod-" + record.moderated));
+    if (record.based_in && record.based_in !== "canada") {
+      /* Only flagged when it is NOT Canadian — a Canadian reader should never
+         have to work out that a listing is run from another country. */
+      chips.appendChild(chip(
+        record.based_in === "international"
+          ? t("based.internationalChip")
+          : t("based.note", { place: t("based." + record.based_in) }),
+        "chip-based"));
+    }
 
     /* --- expanding detail region --- */
     var details = el("div", { class: "card-details", id: detailsId, hidden: "hidden" }, [
       el("dl", { class: "detail-list" }, [
+        detailRow(t("field.basedIn"), record.based_in ? t("based." + record.based_in) : ""),
         detailRow(t("field.conditions"), (record.conditions || []).map(term).join(", ")),
         detailRow(t("field.focusAreas"), (record.focus_areas || []).map(term).join(", ")),
         detailRow(t("field.audience"), (record.audience || []).map(function (a) { return t("audience." + a); }).join(", ")),

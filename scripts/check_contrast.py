@@ -53,6 +53,8 @@ def parse_blocks(css):
         return dict(re.findall(r"(--[a-z0-9-]+)\s*:\s*(#[0-9a-fA-F]{6})\s*;", text))
 
     light = props(light_text)
+    if not dark_text:
+        return light, None          # the project is light-only
     dark = dict(light)
     dark.update(props(dark_text))
     return light, dark
@@ -80,7 +82,10 @@ def main():
     light, dark = parse_blocks(css)
 
     failures = 0
-    for name, palette in (("LIGHT MODE", light), ("DARK MODE", dark)):
+    themes = [("LIGHT MODE", light)]
+    if dark:
+        themes.append(("DARK MODE", dark))
+    for name, palette in themes:
         print("\n%s" % name)
         print("-" * 74)
         for fg_token, bg_token, minimum, description in PAIRS:
@@ -99,7 +104,7 @@ def main():
     if failures:
         print("%d pair(s) below the WCAG 2.2 AA threshold." % failures)
         return 1
-    print("All %d pairs pass WCAG 2.2 AA in both light and dark mode." % (len(PAIRS) * 2))
+    print("All %d pairs pass WCAG 2.2 AA." % (len(PAIRS) * len(themes)))
     return 0
 
 

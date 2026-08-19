@@ -19,12 +19,17 @@ These are the things that still need a person to decide. Everything else works.
 |---|---|---|
 | Email for "Suggest a group" | `assets/config.js` → `contactEmail` | **Guessed** — currently `info@arthritispatient.ca` |
 | Useful Resources link | `assets/config.js` → `resourcesUrl` | **Guessed** — the URL responds, but confirm it is the right page |
-| The listings themselves | `data/groups-template.csv` → run the converter | **Sample data only** — six invented groups, all labelled SAMPLE on the site |
+| Cost, moderation and facilitator detail | `data/groups.csv` | **Mostly `unknown`** — see `data/NOT-LISTED.md` |
 | French wording | `assets/i18n.js` | **Drafted, not reviewed** — see `REVIEW-FR.md` |
 
-The six sample listings are invented. They exist so the site can be tested
-before the real data is ready. Each one has `placeholder: true`, which is why
-they show a **SAMPLE LISTING** label. Delete them when the real listings arrive.
+The directory currently holds **8 real listings**, taken from *CAPA Peer
+Support Report* (the May 2026 scan). They are real organizations with working
+links — but the report recorded what each programme **is**, not what it costs or
+who runs it, so many fields honestly say "not known". `data/NOT-LISTED.md`
+explains exactly what is missing and what was deliberately left out.
+
+`data/groups-template.csv` still holds six invented sample rows, marked
+`placeholder: true`. It is the blank form to copy, not live data.
 
 ---
 
@@ -35,8 +40,9 @@ CSV, and run one command that turns it into the file the website reads.
 
 ### 1. Edit the spreadsheet
 
-Start from `data/groups-template.csv`. Open it in Excel, Numbers, or Google
-Sheets. Each row is one group. The column headings must not be renamed.
+The live listings are `data/groups.csv`. `data/groups-template.csv` is a copy
+with sample rows in it, to show the shape. Open either in Excel, Numbers, or
+Google Sheets. Each row is one group. The column headings must not be renamed.
 
 A few rules the spreadsheet has to follow:
 
@@ -64,13 +70,13 @@ In Google Sheets: **File → Download → Comma-separated values**.
 Open Terminal, and type this (replacing the file name with yours):
 
 ```bash
-python3 scripts/csv_to_json.py data/groups-template.csv
+python3 scripts/csv_to_json.py data/groups.csv
 ```
 
 If everything is fine you will see:
 
 ```
-Wrote 6 listings to data/groups.json
+Wrote 8 listings to data/groups.json
 ```
 
 If something is wrong, nothing is written and you get a list like this:
@@ -153,6 +159,10 @@ The two pale tints are backgrounds only — they are far too light to put text o
 All of these live at the top of `assets/styles.css`; change them there and
 nowhere else, then run `python3 scripts/check_contrast.py`.
 
+The directory is **light only**. A dark theme was built and then removed, to
+keep the site matching the identity sheet, which is built entirely on white and
+the pale tints. If it is ever wanted back, it is in the git history.
+
 Note this identity sheet was made for the Good Care project and is co-branded
 with Psoriasis Canada. Its two purples are the same purples in the CAPA logo, so
 it carries over cleanly — but if CAPA has a separate palette for the main
@@ -190,9 +200,9 @@ straight out of the stylesheet, so it stays honest.
 
 What was verified when this was built:
 
-- **axe-core 4.13** found **no violations** across English, French, light mode,
-  dark mode, mobile width, the empty state, and with all panels expanded.
-- **All 44 colour pairs** pass WCAG 2.2 AA in both light and dark mode.
+- **axe-core 4.13** found **no violations** across English, French, mobile
+  width, the empty state, and with all panels expanded.
+- **All 22 colour pairs** pass WCAG 2.2 AA.
 - **Everything you can press** is at least 44 x 44 pixels.
 - **No sideways scrolling** at 320 pixels wide, at 200% text size, or both at
   once, in either language.
@@ -234,7 +244,9 @@ assets/styles.css             all the styling; the colours are at the top
 assets/app.js                 the search and filter logic
 data/groups.json              the listings the website reads (generated)
 data/groups.schema.json       the rules every listing must follow
-data/groups-template.csv      the spreadsheet template with sample rows
+data/groups.csv               the live listings — edit this one
+data/groups-template.csv      a blank copy with sample rows, for reference
+data/NOT-LISTED.md            what was left out of the directory, and why
 data/vocabularies.md          the words each column will accept
 scripts/csv_to_json.py        spreadsheet -> website, with error checking
 scripts/check_contrast.py     colour contrast against WCAG 2.2 AA

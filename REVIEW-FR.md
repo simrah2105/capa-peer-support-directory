@@ -17,6 +17,15 @@ the public at it, especially the disclaimer, which carries a liability meaning.
 | `assets/i18n.js` → `terms` | French for conditions and focus areas | Medium |
 | `data/groups.json` → the `_fr` fields | French descriptions of each listing | Comes from the spreadsheet, not from here |
 
+## The listing names are deliberately English
+
+Every real listing has an **empty `name_fr`**, so French readers see the English
+name. That is on purpose: inventing a French name for another organization's
+programme would be putting words in their mouth. Where an organization publishes
+its own French name — Arthritis Society Canada almost certainly does — copy that
+official name into the `name_fr` column of `data/groups.csv`. Do not translate
+one yourself.
+
 ## Specific things to look at
 
 1. **The organization's name.** The site currently renders CAPA as
