@@ -160,29 +160,20 @@ website, that one should win.
 
 ### About the font
 
-The brand face is **Poppins**. The stylesheet asks for it first and falls back
-to the closest geometric sans faces that come with macOS and Windows, so the
-page keeps its shape either way. **Poppins is not currently included in this
-project**, which means most visitors will see the fallback.
+The brand face is **Poppins**, and it is **included in this project** at
+`assets/fonts/` — three weights, two character subsets, 39 KB in total.
 
-To use the real thing, download the Poppins Regular, SemiBold and Bold `.woff2`
-files (it is free, under the Open Font License), put them in `assets/fonts/`,
-and add this to the very top of `assets/styles.css`:
+It is hosted inside the project rather than linked from Google Fonts on
+purpose. It means the page works with no internet, it keeps working if Google
+changes something, and no visitor's browser has to make a request to a third
+party just to read a page about their health.
 
-```css
-@font-face {
-  font-family: "Poppins"; font-style: normal; font-weight: 400;
-  font-display: swap; src: url("fonts/poppins-regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Poppins"; font-style: normal; font-weight: 700;
-  font-display: swap; src: url("fonts/poppins-bold.woff2") format("woff2");
-}
-```
+Poppins is free under the SIL Open Font License; the licence travels with the
+files in `assets/fonts/OFL.txt` and must stay there if you pass this project on.
 
-Host the files in the project rather than linking to Google Fonts. It keeps the
-site self-contained, it works offline, and it means visitors' browsers never
-make a request to a third party just to read the page.
+If a listing ever contains letters outside those subsets — an Indigenous
+language name, for instance — that text quietly falls back to the next font in
+the list. That is intended behaviour, not a bug.
 
 ## Checking the site is still accessible
 
@@ -237,6 +228,7 @@ particular company.
 ```
 index.html                    the page itself
 assets/config.js              email address and links — start here
+assets/fonts/                 the Poppins brand font + its licence
 assets/i18n.js                every word on the site, English and French
 assets/styles.css             all the styling; the colours are at the top
 assets/app.js                 the search and filter logic
