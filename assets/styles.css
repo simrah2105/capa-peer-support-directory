@@ -102,7 +102,7 @@
 
   --radius:    12px;
   --radius-sm: 8px;
-  --measure:   66ch;
+  --measure:   58ch;
   --tap:       44px;
 
   /* Poppins is the brand face and is bundled in assets/fonts/. The fallbacks
@@ -190,17 +190,22 @@ body::before {
 .intro {
   background: var(--card);
   border-bottom: 1px solid var(--border);
+  /* The padding lives here rather than on the heading. With the spacing on the
+     heading instead, its top margin collapsed straight through the band and
+     left a stray strip of page colour above it. */
+  padding-top: 3rem;
   padding-bottom: 2.75rem;
   margin-bottom: 3rem;
 }
+.intro .wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
 
 .page-title {
-  font-size: clamp(2rem, 1.3rem + 3vw, 3.25rem);
-  line-height: 1.08; margin: 3.25rem 0 0.75rem; max-width: 18ch;
+  font-size: clamp(1.875rem, 1.4rem + 2vw, 2.75rem);
+  line-height: 1.1; margin: 0 0 0.75rem; max-width: 18ch;
 }
 .page-subtitle {
   margin: 0 0 2.25rem; color: var(--text-muted);
-  font-size: 1.1875rem; line-height: 1.55; max-width: 54ch;
+  font-size: 1.0625rem; line-height: 1.55; max-width: 54ch;
 }
 
 .disclaimer {
@@ -222,7 +227,7 @@ body::before {
 @media (min-width: 56rem) {
   .layout {
     display: grid;
-    grid-template-columns: 20rem minmax(0, 1fr);
+    grid-template-columns: 21rem minmax(0, 1fr);
     gap: 2.75rem;
     align-items: start;
   }
@@ -392,7 +397,7 @@ fieldset.filter-group legend {
 
 .result-count {
   font-weight: 700; margin: 0 0 1.25rem;
-  font-size: 1.125rem; color: var(--heading);
+  font-size: 1.0625rem; color: var(--heading);
   padding-bottom: 0.85rem;
   border-bottom: 2px solid var(--brand-lilac);
 }
@@ -420,7 +425,7 @@ fieldset.filter-group legend {
 }
 .card:hover { border-color: var(--border-strong); }
 
-.card-name { font-size: 1.4375rem; line-height: 1.2; margin: 0 0 0.25rem; }
+.card-name { font-size: 1.3125rem; line-height: 1.25; margin: 0 0 0.25rem; }
 .card-org { margin: 0 0 1.1rem; color: var(--text-muted); font-size: 0.9375rem; }
 .card-desc { margin: 0 0 1.5rem; max-width: var(--measure); color: var(--text); }
 

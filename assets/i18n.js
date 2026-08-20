@@ -83,7 +83,7 @@ window.I18N = {
     "field.language": "Language",
     "field.source": "Where we confirmed this",
     "field.sourceLink": "View source",
-    "field.city": "Location",
+    "field.location": "Where",
 
     /* --- empty state --- */
     "empty.heading": "No groups match your filters",
@@ -156,7 +156,7 @@ window.I18N = {
     "lang.other": "Other",
 
     /* --- vocabulary: province --- */
-    "prov.national": "National / anywhere in Canada",
+    "prov.national": "Across Canada",
     "prov.AB": "Alberta",
     "prov.BC": "British Columbia",
     "prov.MB": "Manitoba",
@@ -242,7 +242,7 @@ window.I18N = {
     "field.language": "Langue",
     "field.source": "Source de vérification",
     "field.sourceLink": "Voir la source",
-    "field.city": "Lieu",
+    "field.location": "Où",
 
     "empty.heading": "Aucun groupe ne correspond à vos filtres",
     "empty.body": "Essayez d'en retirer un, ou effacez tout et recommencez.",
@@ -304,7 +304,7 @@ window.I18N = {
     "lang.fr": "Français",
     "lang.other": "Autre",
 
-    "prov.national": "National / partout au Canada",
+    "prov.national": "Partout au Canada",
     "prov.AB": "Alberta",
     "prov.BC": "Colombie-Britannique",
     "prov.MB": "Manitoba",

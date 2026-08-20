@@ -350,6 +350,22 @@
     return el("li", { class: "chip" + (extraClass ? " " + extraClass : ""), text: text });
   }
 
+  /* One chip per idea, not one per value. A national listing was producing a
+     chip for every province and every language, which pushed the row onto two
+     lines and buried the group's name. */
+  function locationLabel(record) {
+    var provinces = record.province || [];
+    if (provinces.indexOf("national") !== -1) return t("prov.national");
+    if (provinces.length <= 2) {
+      return provinces.map(function (code) { return t("prov." + code); }).join(", ");
+    }
+    return provinces.join(", ");   // three or more: the two letter codes stay readable
+  }
+
+  function languageLabel(record) {
+    return (record.language || []).map(function (code) { return t("lang." + code); }).join(", ");
+  }
+
   function detailRow(label, value) {
     if (!value || !String(value).trim()) return null;
     return el("div", null, [
@@ -365,9 +381,14 @@
     /* --- chips: format, provinces, cost, languages, moderation --- */
     var chips = el("ul", { class: "chips" });
     chips.appendChild(chip(t("format." + record.format)));
-    (record.province || []).forEach(function (code) { chips.appendChild(chip(t("prov." + code))); });
+    /* For a group run from outside Canada, "Based in the United Kingdom" is the
+       useful fact and "Across Canada" adds nothing, so only one of the two
+       appears. The expanded detail carries both either way. */
+    if (!record.based_in || record.based_in === "canada") {
+      chips.appendChild(chip(locationLabel(record)));
+    }
     chips.appendChild(chip(t("cost." + record.cost)));
-    (record.language || []).forEach(function (code) { chips.appendChild(chip(t("lang." + code))); });
+    chips.appendChild(chip(languageLabel(record)));
     chips.appendChild(chip(t("moderated." + record.moderated), "chip-mod-" + record.moderated));
     if (record.based_in && record.based_in !== "canada") {
       /* Only flagged when it is NOT Canadian, a Canadian reader should never
@@ -386,7 +407,9 @@
         detailRow(t("field.conditions"), (record.conditions || []).map(term).join(", ")),
         detailRow(t("field.focusAreas"), (record.focus_areas || []).map(term).join(", ")),
         detailRow(t("field.audience"), (record.audience || []).map(function (a) { return t("audience." + a); }).join(", ")),
-        detailRow(t("field.city"), record.city),
+        detailRow(t("field.location"),
+          [(record.province || []).map(function (code) { return t("prov." + code); }).join(", "),
+           record.city].filter(Boolean).join(" . ")),
         detailRow(t("field.schedule"), localized(record, "schedule_notes")),
         detailRow(t("field.howToAccess"),
           [t("access." + record.how_to_access), localized(record, "how_to_access_notes")]
