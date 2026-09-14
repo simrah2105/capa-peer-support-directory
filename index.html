@@ -32,6 +32,13 @@
       <h1 class="page-title" data-i18n="site.title">Peer Support Directory</h1>
       <p class="page-subtitle" data-i18n="site.subtitle"></p>
 
+      <div class="hero-search">
+        <label class="field-label" for="search" data-i18n="search.label">Search groups</label>
+        <input type="search" id="search" name="q" class="search-input" autocomplete="off"
+               aria-describedby="search-hint">
+        <p class="field-hint" id="search-hint" data-i18n="search.hint"></p>
+      </div>
+
       <aside class="disclaimer" aria-labelledby="disclaimer-heading">
         <h2 id="disclaimer-heading" class="disclaimer-heading" data-i18n="disclaimer.heading">Before you use this directory</h2>
         <p data-i18n="disclaimer.body"></p>
@@ -54,13 +61,6 @@
 
       <form id="filters-panel" class="filters-panel" aria-labelledby="filters-heading">
         <h2 id="filters-heading" class="filters-heading" data-i18n="filters.heading">Filter</h2>
-
-        <div class="field">
-          <label class="field-label" for="search" data-i18n="search.label">Search groups</label>
-          <input type="search" id="search" name="q" class="search-input" autocomplete="off"
-                 aria-describedby="search-hint">
-          <p class="field-hint" id="search-hint" data-i18n="search.hint"></p>
-        </div>
 
         <div id="filter-groups"></div>
 

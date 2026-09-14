@@ -192,8 +192,8 @@ body::before {
    44% was permanently empty. The padding lives here rather than on the heading,
    because a margin on the heading collapses straight out of the container. */
 .intro {
-  padding-top: 2.75rem;
-  padding-bottom: 2.25rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--border);
 }
 /* A hairline instead of a filled band: it separates the intro from the results
@@ -202,10 +202,10 @@ body::before {
 
 .page-title {
   font-size: clamp(1.875rem, 1.4rem + 2vw, 2.75rem);
-  line-height: 1.1; margin: 0 0 0.75rem; max-width: 18ch;
+  line-height: 1.1; margin: 0 0 0.6rem; max-width: 20ch;
 }
 .page-subtitle {
-  margin: 0 0 2.25rem; color: var(--text-muted);
+  margin: 0 0 1.75rem; color: var(--text-muted);
   font-size: 1.0625rem; line-height: 1.55; max-width: 54ch;
 }
 
@@ -218,6 +218,15 @@ body::before {
 }
 .disclaimer-heading { font-size: 1.0625rem; margin: 0 0 0.3rem; color: var(--text); }
 .disclaimer p { margin: 0; font-size: 1rem; }
+
+.hero-search { max-width: 34rem; margin-bottom: 1.75rem; }
+.hero-search .search-input {
+  font-size: 1.125rem;
+  min-height: 3.25rem;
+  padding: 0.7rem 1rem;
+  background: var(--card);
+}
+.hero-search .field-label { margin-bottom: 0.45rem; }
 
 /* --- layout --------------------------------------------------------------- */
 
@@ -254,15 +263,16 @@ body::before {
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;
   margin-bottom: 2rem;
-  background: transparent;
-  border: 0;
-  padding: 0 1.5rem 0 0;
-  border-right: 1px solid var(--border);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.35rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow);
 }
 .filters-panel[hidden] { display: none; }
 
 @media (max-width: 55.99rem) {
-  .filters-panel { border-right: 0; padding-right: 0; }
+  .filters-panel { padding: 0.35rem 1.1rem 1.1rem; }
 }
 
 @media (min-width: 56rem) {
@@ -300,6 +310,7 @@ fieldset.filter-group {
   border: 0; border-top: 1px solid var(--border);
   margin: 0; padding: 1.4rem 0 1rem;
 }
+fieldset.filter-group:first-of-type { border-top: 0; }
 fieldset.filter-group legend {
   font-weight: 700; padding: 0; color: var(--heading);
 }
