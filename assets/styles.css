@@ -92,7 +92,7 @@
   --accent:        #582d80;
   --accent-solid:  #9f3e94;
   --accent-on:     #ffffff;
-  --accent-soft:   #f6eaf5;
+  --accent-soft:   #f2dff0;
   --focus:         #582d80;
   --callout:       #fdf6da;
   --callout-edge:  #9f3e94;
@@ -187,16 +187,17 @@ body::before {
 
 /* --- page intro ----------------------------------------------------------- */
 
+/* The intro sits straight on the page. It used to be a white band, but the band
+   was full width while its content only ever filled the left half, so the right
+   44% was permanently empty. The padding lives here rather than on the heading,
+   because a margin on the heading collapses straight out of the container. */
 .intro {
-  background: var(--card);
+  padding-top: 2.75rem;
+  padding-bottom: 2.25rem;
   border-bottom: 1px solid var(--border);
-  /* The padding lives here rather than on the heading. With the spacing on the
-     heading instead, its top margin collapsed straight through the band and
-     left a stray strip of page colour above it. */
-  padding-top: 3rem;
-  padding-bottom: 2.75rem;
-  margin-bottom: 3rem;
 }
+/* A hairline instead of a filled band: it separates the intro from the results
+   without adding another background colour to the stack. */
 .intro .wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
 
 .page-title {
@@ -209,16 +210,14 @@ body::before {
 }
 
 .disclaimer {
-  background: var(--callout);
-  border: 1px solid var(--border);
-  border-left: 5px solid var(--callout-edge);
-  border-radius: var(--radius);
-  padding: 1.15rem 1.4rem;
+  border-left: 3px solid var(--brand-magenta);
+  padding: 0.15rem 0 0.15rem 1.1rem;
   margin-bottom: 0;
   max-width: var(--measure);
+  color: var(--text-muted);
 }
-.disclaimer-heading { font-size: 1.0625rem; margin: 0 0 0.4rem; color: var(--text); }
-.disclaimer p { margin: 0; }
+.disclaimer-heading { font-size: 1.0625rem; margin: 0 0 0.3rem; color: var(--text); }
+.disclaimer p { margin: 0; font-size: 1rem; }
 
 /* --- layout --------------------------------------------------------------- */
 
@@ -252,6 +251,8 @@ body::before {
 }
 
 .filters-panel {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
   margin-bottom: 2rem;
   background: transparent;
   border: 0;
@@ -391,6 +392,12 @@ fieldset.filter-group legend {
 }
 .btn-quiet:hover { background: var(--accent-soft); border-color: var(--accent); }
 
+.filters-panel::-webkit-scrollbar { width: 8px; }
+.filters-panel::-webkit-scrollbar-thumb {
+  background: var(--border); border-radius: 999px;
+}
+.filters-panel:hover::-webkit-scrollbar-thumb { background: var(--border-strong); }
+
 /* --- results -------------------------------------------------------------- */
 
 .results-column:focus { outline: none; }
@@ -471,8 +478,7 @@ fieldset.filter-group legend {
 .detail-list dd { margin: 0; max-width: var(--measure); overflow-wrap: anywhere; }
 
 .card-footer {
-  margin-top: 1.25rem; padding-top: 0.85rem;
-  border-top: 1px solid var(--border);
+  margin-top: 1.25rem;
   font-size: 0.875rem; color: var(--text-muted);
 }
 .stale-note {
