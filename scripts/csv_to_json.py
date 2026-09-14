@@ -248,6 +248,9 @@ def main():
     parser.add_argument("csv_file", nargs="?", help="CSV exported from the spreadsheet")
     parser.add_argument("--out", default=DEFAULT_OUT, help="where to write the JSON (default: data/groups.json)")
     parser.add_argument("--check", action="store_true", help="validate the existing groups.json instead of converting")
+    parser.add_argument("--to-csv", metavar="FILE",
+                        help="go the other way: rebuild a spreadsheet from groups.json. "
+                             "Use this if the CSV is ever lost or damaged.")
     args = parser.parse_args()
 
     with open(SCHEMA_PATH, encoding="utf-8") as fh:
@@ -256,6 +259,28 @@ def main():
     schema_props = group_schema["properties"]
 
     problems = []
+
+    if args.to_csv:
+        with open(args.out, encoding="utf-8") as fh:
+            records = json.load(fh).get("records", [])
+        headers = [f for f in schema_props]
+        with open(args.to_csv, "w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=headers)
+            writer.writeheader()
+            for record in records:
+                row = {}
+                for field in headers:
+                    value = record.get(field, "")
+                    if isinstance(value, list):
+                        value = LIST_SEPARATOR.join(value)
+                    elif isinstance(value, bool):
+                        value = "true" if value else "false"
+                    elif value is None:
+                        value = ""
+                    row[field] = value
+                writer.writerow(row)
+        print("Rebuilt %s from %s (%d listings)" % (args.to_csv, args.out, len(records)))
+        return 0
 
     if args.check:
         with open(args.out, encoding="utf-8") as fh:

@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-09-14",
   "records": [
     {
       "id": "arthritis-society-canada-arthritis-connections",
@@ -18,6 +18,7 @@
         "inflammatory arthritis"
       ],
       "format": "virtual",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -55,9 +56,9 @@
       ],
       "schedule_notes_en": "Groups run at various times through the month.",
       "schedule_notes_fr": "Les groupes ont lieu à divers moments du mois.",
-      "contact_email": null,
+      "contact_email": "connections@arthritis.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://arthritis.ca/support-education/arthritis-connections/"
     },
     {
@@ -66,13 +67,14 @@
       "name_en": "CSA Support Groups",
       "organization": "Canadian Spondyloarthritis Association",
       "based_in": "canada",
-      "description_en": "Diagnosis-specific peer support for people living with spondyloarthritis, offered through local and virtual groups. The association frames these groups around talking with someone who understands, sharing in a safe environment, and getting emotional support and lived-experience knowledge to manage symptoms.",
-      "description_fr": "Soutien par les pairs propre au diagnostic pour les personnes vivant avec une spondylarthrite, offert par des groupes locaux et virtuels. L'association présente ces groupes comme un moyen de parler à quelqu'un qui comprend, de partager dans un environnement sûr et d'obtenir du soutien émotionnel et des savoirs issus de l'expérience vécue.",
+      "description_en": "Peer support groups for people living with spondyloarthritis. Alongside regional communities there are groups for young adults, for mothers, and for caregivers and loved ones.",
+      "description_fr": "Groupes de soutien par les pairs pour les personnes vivant avec une spondylarthrite. En plus des communautes regionales, il existe des groupes pour les jeunes adultes, pour les meres, et pour les proches aidants.",
       "conditions": [
         "spondyloarthritis",
         "ankylosing spondylitis"
       ],
       "format": "hybrid",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -98,9 +100,12 @@
         "self-management"
       ],
       "audience": [
-        "adults"
+        "adults",
+        "young-adults",
+        "caregivers",
+        "families"
       ],
-      "contact_email": null,
+      "contact_email": "info@sparthritis.ca",
       "contact_phone": null,
       "last_verified": "2026-05-29",
       "source_url": "https://sparthritis.ca/find-support/"
@@ -119,6 +124,7 @@
         "psoriatic arthritis"
       ],
       "format": "online-forum",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -165,6 +171,7 @@
         "rheumatoid arthritis"
       ],
       "format": "online-forum",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -213,6 +220,7 @@
         "psoriasis"
       ],
       "format": "online-forum",
+      "category": "psoriatic-disease",
       "province": [
         "national"
       ],
@@ -260,6 +268,7 @@
         "psoriasis"
       ],
       "format": "online-forum",
+      "category": "psoriatic-disease",
       "province": [
         "national"
       ],
@@ -306,6 +315,7 @@
         "osteoarthritis"
       ],
       "format": "virtual",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -351,6 +361,7 @@
         "ankylosing spondylitis"
       ],
       "format": "virtual",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -395,6 +406,7 @@
         "any arthritis"
       ],
       "format": "virtual",
+      "category": "chronic-pain",
       "province": [
         "BC"
       ],
@@ -426,9 +438,9 @@
       ],
       "schedule_notes_en": "Most groups meet twice a month on a Tuesday, either 11am to 1pm or 6pm to 8pm. You can dial in by phone if you cannot join by video.",
       "schedule_notes_fr": "La plupart des groupes se réunissent deux fois par mois le mardi, de 11 h à 13 h ou de 18 h à 20 h. Une participation par téléphone est possible.",
-      "contact_email": null,
+      "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
     },
     {
@@ -445,6 +457,7 @@
         "any arthritis"
       ],
       "format": "virtual",
+      "category": "chronic-pain",
       "province": [
         "BC"
       ],
@@ -475,9 +488,9 @@
       ],
       "schedule_notes_en": "Monthly, on the third Tuesday.",
       "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
-      "contact_email": null,
+      "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
     },
     {
@@ -494,6 +507,7 @@
         "any arthritis"
       ],
       "format": "virtual",
+      "category": "chronic-pain",
       "province": [
         "BC"
       ],
@@ -524,9 +538,9 @@
       ],
       "schedule_notes_en": "Monthly, on the third Tuesday.",
       "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
-      "contact_email": null,
+      "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
     },
     {
@@ -543,6 +557,7 @@
         "any arthritis"
       ],
       "format": "virtual",
+      "category": "chronic-pain",
       "province": [
         "BC"
       ],
@@ -573,9 +588,9 @@
       ],
       "schedule_notes_en": "Monthly, on the third Tuesday.",
       "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
-      "contact_email": null,
+      "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
     },
     {
@@ -591,6 +606,7 @@
         "any arthritis"
       ],
       "format": "hybrid",
+      "category": "chronic-pain",
       "province": [
         "national",
         "BC",
@@ -608,7 +624,7 @@
       "how_to_access": "sign-up-form",
       "how_to_access_notes_en": "Register for a meeting through the network's booking page.",
       "how_to_access_notes_fr": "Inscrivez-vous à une rencontre via la page de réservation du réseau.",
-      "access_url": "https://www.pipain.com/",
+      "access_url": "https://www.pipain.com/manage-680267.html",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Volunteer peer leaders who live with pain themselves and coordinate the meetings.",
       "facilitator_notes_fr": "Des pairs bénévoles qui vivent eux-mêmes avec la douleur et coordonnent les rencontres.",
@@ -624,9 +640,9 @@
         "adults",
         "caregivers"
       ],
-      "contact_email": null,
+      "contact_email": "info@pipain.com",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://www.pipain.com/"
     },
     {
@@ -642,6 +658,7 @@
         "any arthritis"
       ],
       "format": "hybrid",
+      "category": "chronic-pain",
       "province": [
         "AB"
       ],
@@ -672,7 +689,7 @@
       ],
       "contact_email": "helpalbertaspain@gmail.com",
       "contact_phone": "780 851 2480",
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://helpalbertaspain.com/"
     },
     {
@@ -689,6 +706,7 @@
         "autoinflammatory disease"
       ],
       "format": "online-forum",
+      "category": "arthritis",
       "province": [
         "national"
       ],
@@ -717,9 +735,9 @@
         "caregivers",
         "families"
       ],
-      "contact_email": null,
+      "contact_email": "brittany@cassieandfriends.ca",
       "contact_phone": null,
-      "last_verified": "2026-08-19",
+      "last_verified": "2026-09-14",
       "source_url": "https://cassieandfriends.ca/supportnetwork/"
     },
     {
@@ -736,6 +754,7 @@
         "autoinflammatory disease"
       ],
       "format": "in-person",
+      "category": "arthritis",
       "province": [
         "AB",
         "ON",
@@ -749,9 +768,9 @@
       "cost_notes_en": "Cost was not stated on the page.",
       "cost_notes_fr": "Le coût n'était pas indiqué sur la page.",
       "how_to_access": "contact-first",
-      "how_to_access_notes_en": "Join the mailing list to hear about upcoming socials and workshops, or email the TAG team about starting a chapter.",
-      "how_to_access_notes_fr": "Inscrivez-vous à la liste de diffusion pour connaître les prochaines activités, ou écrivez à l'équipe TAG pour créer un chapitre.",
-      "access_url": "https://cassieandfriends.ca/taggroups/",
+      "how_to_access_notes_en": "Start from the Cassie + Friends support page. The dedicated TAG page was unavailable when this was checked, so ask them which chapter is nearest you.",
+      "how_to_access_notes_fr": "Commencez par la page de soutien de Cassie + Friends. La page TAG etait indisponible lors de la verification; demandez-leur quel chapitre est le plus proche.",
+      "access_url": "https://cassieandfriends.ca/support/",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Chapters are led by young adults who have navigated rheumatic disease themselves. The programme describes itself as hosted by youth, for youth.",
       "facilitator_notes_fr": "Les chapitres sont animés par de jeunes adultes ayant vécu avec une maladie rhumatismale. Le programme se décrit comme fait par et pour les jeunes.",
@@ -764,10 +783,730 @@
       "audience": [
         "youth"
       ],
+      "contact_email": "brittany@cassieandfriends.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://cassieandfriends.ca/support/"
+    },
+    {
+      "id": "take-a-pain-check-joint-chat-rheum",
+      "placeholder": false,
+      "name_en": "Joint Chat Rheum",
+      "organization": "Take a Pain Check Foundation",
+      "based_in": "canada",
+      "description_en": "Virtual peer support for youth and young adults aged 16 to 29 living with rheumatic disease. Sessions are a space to meet others who understand the same experiences.",
+      "description_fr": "Soutien virtuel par les pairs pour les jeunes et jeunes adultes de 16 a 29 ans vivant avec une maladie rhumatismale. Les seances sont un espace pour rencontrer d'autres personnes qui vivent la meme chose.",
+      "conditions": [
+        "rheumatic disease",
+        "juvenile arthritis",
+        "any arthritis"
+      ],
+      "format": "virtual",
+      "category": "arthritis",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.takeapaincheck.com/joint-chat-rheum",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "social connection",
+        "young adults"
+      ],
+      "audience": [
+        "youth",
+        "young-adults"
+      ],
+      "contact_email": "info@takeapaincheck.com",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.takeapaincheck.com/joint-chat-rheum"
+    },
+    {
+      "id": "psoriasis-canada-online-support",
+      "placeholder": false,
+      "name_en": "Online Support Program",
+      "organization": "Psoriasis Canada",
+      "based_in": "canada",
+      "description_en": "Facilitated online sessions where people affected by psoriasis and psoriatic arthritis can connect, share experiences and talk about living with psoriatic disease.",
+      "description_fr": "Seances en ligne animees ou les personnes touchees par le psoriasis et l'arthrite psoriasique peuvent echanger, partager leur experience et parler de la vie avec une maladie psoriasique.",
+      "conditions": [
+        "psoriatic arthritis",
+        "psoriasis"
+      ],
+      "format": "virtual",
+      "category": "psoriatic-disease",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en",
+        "fr"
+      ],
+      "language_notes_en": "French options are offered.",
+      "language_notes_fr": "Des options en francais sont offertes.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://psoriasiscanada.ca/online-support-programs/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "treatment decisions"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "contact_email": "info@psoriasiscanada.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://psoriasiscanada.ca/online-support-programs/"
+    },
+    {
+      "id": "lupus-ontario-support-groups",
+      "placeholder": false,
+      "name_en": "Lupus Ontario Support Groups",
+      "organization": "Lupus Ontario",
+      "based_in": "canada",
+      "description_en": "A network of provincial, regional and community specific peer support groups for people living with lupus, including groups in Durham, Ottawa, Windsor, South Georgian Bay and the west of the province, plus groups for men, for menopause and for young adults.",
+      "description_fr": "Reseau de groupes de soutien par les pairs provinciaux, regionaux et communautaires pour les personnes vivant avec le lupus, dont des groupes a Durham, Ottawa, Windsor, South Georgian Bay et dans l'ouest de la province, ainsi que des groupes pour les hommes, sur la menopause et pour les jeunes adultes.",
+      "conditions": [
+        "lupus"
+      ],
+      "format": "hybrid",
+      "category": "lupus",
+      "province": [
+        "ON"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://lupusontario.org/support/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "social connection",
+        "young adults"
+      ],
+      "audience": [
+        "adults",
+        "young-adults",
+        "men"
+      ],
+      "contact_email": "info@lupusontario.org",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://lupusontario.org/support/"
+    },
+    {
+      "id": "bc-lupus-society-support-groups",
+      "placeholder": false,
+      "name_en": "BC Lupus Society Support Groups",
+      "organization": "BC Lupus Society",
+      "based_in": "canada",
+      "description_en": "Virtual peer support groups for people living with lupus and for caregivers in British Columbia, including general meetings and a men's group.",
+      "description_fr": "Groupes de soutien virtuels par les pairs pour les personnes vivant avec le lupus et pour les proches aidants en Colombie-Britannique, dont des rencontres generales et un groupe pour les hommes.",
+      "conditions": [
+        "lupus"
+      ],
+      "format": "virtual",
+      "category": "lupus",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.bclupus.org/resources-support-group",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "caregivers"
+      ],
+      "audience": [
+        "adults",
+        "caregivers",
+        "men"
+      ],
+      "contact_email": "brenda.bergen@bclupus.org",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.bclupus.org/resources-support-group"
+    },
+    {
+      "id": "lupus-alberta-spill-the-lupus",
+      "placeholder": false,
+      "name_en": "Spill the Lupus",
+      "organization": "Lupus Society of Alberta",
+      "based_in": "canada",
+      "description_en": "An online support group where people affected by lupus share experiences, meet others and learn about lupus related issues.",
+      "description_fr": "Groupe de soutien en ligne ou les personnes touchees par le lupus partagent leur experience, rencontrent d'autres personnes et s'informent sur le lupus.",
+      "conditions": [
+        "lupus"
+      ],
+      "format": "virtual",
+      "category": "lupus",
+      "province": [
+        "AB"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.lupus.ab.ca/events",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "self-management"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "contact_email": "lupuslsa@shaw.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.lupus.ab.ca/events"
+    },
+    {
+      "id": "sjogrens-society-canada-support-groups",
+      "placeholder": false,
+      "name_en": "Sjogren's Society of Canada support groups",
+      "organization": "Sjogren's Society of Canada",
+      "based_in": "canada",
+      "description_en": "A national network of volunteer led peer support groups and local support contacts, with groups across Atlantic Canada, Alberta, British Columbia, Manitoba, Ontario, Quebec and Saskatchewan.",
+      "description_fr": "Reseau national de groupes de soutien par les pairs animes par des benevoles, avec des groupes au Canada atlantique, en Alberta, en Colombie-Britannique, au Manitoba, en Ontario, au Quebec et en Saskatchewan.",
+      "conditions": [
+        "sjogren's disease"
+      ],
+      "format": "hybrid",
+      "category": "sjogrens",
+      "province": [
+        "national",
+        "AB",
+        "BC",
+        "MB",
+        "ON",
+        "QC",
+        "SK",
+        "NS",
+        "NB",
+        "NL",
+        "PE"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://sjogrenscanada.org/living-with-sjgrens/support-groups.html",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "The groups are described as volunteer led.",
+      "facilitator_notes_fr": "Les groupes sont decrits comme animes par des benevoles.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "self-management"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "contact_email": "info@sjogrenscanada.org",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://sjogrenscanada.org/living-with-sjgrens/support-groups.html"
+    },
+    {
+      "id": "association-syndrome-sjogren-quebec",
+      "placeholder": false,
+      "name_en": "Sjogren support groups",
+      "name_fr": "Groupes de soutien Sjogren",
+      "organization": "Association du Syndrome de Sjogren",
+      "based_in": "canada",
+      "description_en": "Virtual support and self help meetings where people affected by Sjogren's disease and their loved ones share experiences, concerns and practical strategies.",
+      "description_fr": "Rencontres virtuelles de soutien et d'entraide ou les personnes touchees par le syndrome de Sjogren et leurs proches partagent experiences, preoccupations et strategies pratiques.",
+      "conditions": [
+        "sjogren's disease"
+      ],
+      "format": "virtual",
+      "category": "sjogrens",
+      "province": [
+        "QC"
+      ],
+      "city": null,
+      "language": [
+        "fr",
+        "en"
+      ],
+      "language_notes_en": "Runs in French, with English available.",
+      "language_notes_fr": "Se deroule en francais, avec de l'anglais disponible.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://sjogren.ca/en/support/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "self-management"
+      ],
+      "audience": [
+        "adults",
+        "families"
+      ],
+      "contact_email": "sjogrenquebec@gmail.com",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://sjogren.ca/en/support/"
+    },
+    {
+      "id": "scleroderma-society-ontario-peer-support",
+      "placeholder": false,
+      "name_en": "Peer to peer support groups",
+      "organization": "Scleroderma Society of Ontario",
+      "based_in": "canada",
+      "description_en": "Free peer to peer groups offering connection and shared experience for people living with scleroderma and their loved ones.",
+      "description_fr": "Groupes gratuits entre pairs offrant des liens et des experiences partagees aux personnes vivant avec la sclerodermie et a leurs proches.",
+      "conditions": [
+        "scleroderma"
+      ],
+      "format": "virtual",
+      "category": "scleroderma",
+      "province": [
+        "ON"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "free",
+      "cost_notes_en": "Free to take part.",
+      "cost_notes_fr": "Participation gratuite.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.hardword.ca/patient-support",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "social connection"
+      ],
+      "audience": [
+        "adults",
+        "families"
+      ],
+      "contact_email": "info@scleroderma.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.hardword.ca/patient-support"
+    },
+    {
+      "id": "scleroderma-manitoba-support-group",
+      "placeholder": false,
+      "name_en": "Scleroderma Manitoba support group",
+      "organization": "Scleroderma Manitoba",
+      "based_in": "canada",
+      "description_en": "Peer support meetings where people living with scleroderma, along with caregivers, family and supporters, meet others and learn about living with the condition.",
+      "description_fr": "Rencontres de soutien par les pairs ou les personnes vivant avec la sclerodermie, ainsi que leurs proches aidants et leur famille, rencontrent d'autres personnes et s'informent.",
+      "conditions": [
+        "scleroderma"
+      ],
+      "format": "hybrid",
+      "category": "scleroderma",
+      "province": [
+        "MB"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://sclerodermamanitoba.com/support-in-your-community/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "caregivers"
+      ],
+      "audience": [
+        "adults",
+        "caregivers",
+        "families"
+      ],
+      "contact_email": "sclerodermamb@gmail.com",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://sclerodermamanitoba.com/support-in-your-community/"
+    },
+    {
+      "id": "scleroderma-bc-support-network",
+      "placeholder": false,
+      "name_en": "Scleroderma BC support network",
+      "organization": "Scleroderma Association of BC",
+      "based_in": "canada",
+      "description_en": "Community based peer support through volunteer representatives and local connections across British Columbia. How each connection is made was not stated.",
+      "description_fr": "Soutien communautaire par les pairs via des representants benevoles et des liens locaux partout en Colombie-Britannique. La facon dont chaque lien se fait n'etait pas precisee.",
+      "conditions": [
+        "scleroderma"
+      ],
+      "format": "unknown",
+      "category": "scleroderma",
+      "province": [
+        "BC"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Contact the association to be connected with a local representative.",
+      "how_to_access_notes_fr": "Communiquez avec l'association pour etre mis en lien avec un representant local.",
+      "access_url": "https://sclerodermabc.ca/support-and-assistance/find-a-support-group/",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Support is provided through volunteer representatives.",
+      "facilitator_notes_fr": "Le soutien est offert par des representants benevoles.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "caregivers"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "contact_email": "info@sclerodermabc.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://sclerodermabc.ca/support-and-assistance/find-a-support-group/"
+    },
+    {
+      "id": "sclerodermie-quebec-support-groups",
+      "placeholder": false,
+      "name_en": "Sclerodermie Quebec support groups",
+      "name_fr": "Groupes de soutien Sclerodermie Quebec",
+      "organization": "Sclerodermie Quebec",
+      "based_in": "canada",
+      "description_en": "Regional and community specific peer support groups, including groups for youth, evening groups, groups for localized scleroderma and an English language option.",
+      "description_fr": "Groupes de soutien par les pairs regionaux et communautaires, dont des groupes pour les jeunes, des groupes en soiree, des groupes sur la sclerodermie localisee et une option en anglais.",
+      "conditions": [
+        "scleroderma"
+      ],
+      "format": "hybrid",
+      "category": "scleroderma",
+      "province": [
+        "QC"
+      ],
+      "city": null,
+      "language": [
+        "fr",
+        "en"
+      ],
+      "language_notes_en": "Runs in French, with an English language group.",
+      "language_notes_fr": "Se deroule en francais, avec un groupe en anglais.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://sclerodermie.ca/en/support-group/support-and-assistance/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "caregivers",
+        "young adults"
+      ],
+      "audience": [
+        "adults",
+        "young-adults",
+        "caregivers"
+      ],
+      "contact_email": "info@sclerodermie.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://sclerodermie.ca/en/support-group/support-and-assistance/"
+    },
+    {
+      "id": "myositis-canada-support-network",
+      "placeholder": false,
+      "name_en": "Myositis Canada support network",
+      "organization": "Myositis Canada",
+      "based_in": "canada",
+      "description_en": "Peer connection and support for people living with myositis and for caregivers, across Canada.",
+      "description_fr": "Liens et soutien entre pairs pour les personnes vivant avec une myosite et pour les proches aidants, partout au Canada.",
+      "conditions": [
+        "myositis"
+      ],
+      "format": "virtual",
+      "category": "myositis",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.myositis.ca/support",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "caregivers"
+      ],
+      "audience": [
+        "adults",
+        "caregivers"
+      ],
+      "contact_email": "president@myositis.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.myositis.ca/support"
+    },
+    {
+      "id": "vasculitis-foundation-canada-support-groups",
+      "placeholder": false,
+      "name_en": "Vasculitis Foundation Canada support groups",
+      "organization": "Vasculitis Foundation Canada",
+      "based_in": "canada",
+      "description_en": "Disease specific virtual support groups and regional peer support contacts for people affected by vasculitis, covering giant cell arteritis, polymyalgia rheumatica, Takayasu's arteritis, granulomatosis with polyangiitis, microscopic polyangiitis, EGPA and other forms.",
+      "description_fr": "Groupes de soutien virtuels propres a chaque maladie et personnes-ressources regionales pour les personnes touchees par une vascularite, dont l'arterite a cellules geantes, la pseudo-polyarthrite rhizomelique, l'arterite de Takayasu, la granulomatose avec polyangeite, la polyangeite microscopique et l'EGPA.",
+      "conditions": [
+        "vasculitis",
+        "giant cell arteritis",
+        "polymyalgia rheumatica"
+      ],
+      "format": "hybrid",
+      "category": "vasculitis",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://vasculitis.ca/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "newly diagnosed",
+        "treatment decisions"
+      ],
+      "audience": [
+        "adults",
+        "families"
+      ],
+      "contact_email": "contact@vasculitis.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://vasculitis.ca/"
+    },
+    {
+      "id": "canadian-autoinflammatory-network-story-hour",
+      "placeholder": false,
+      "name_en": "AutoinflammaStory Hour",
+      "organization": "Canadian Autoinflammatory Network",
+      "based_in": "canada",
+      "description_en": "A virtual community space where people living with rare autoinflammatory diseases and their families connect, share experiences and support one another.",
+      "description_fr": "Espace communautaire virtuel ou les personnes vivant avec une maladie auto-inflammatoire rare et leurs familles se rencontrent, partagent leur experience et s'entraident.",
+      "conditions": [
+        "autoinflammatory disease"
+      ],
+      "format": "virtual",
+      "category": "autoinflammatory",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://www.autoinflammatory.ca/events",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "social connection"
+      ],
+      "audience": [
+        "adults",
+        "families",
+        "caregivers"
+      ],
+      "contact_email": "info@autoinflammatory.ca",
+      "contact_phone": null,
+      "last_verified": "2026-09-14",
+      "source_url": "https://www.autoinflammatory.ca/events"
+    },
+    {
+      "id": "eds-canada-virtual-support-groups",
+      "placeholder": false,
+      "name_en": "EDS Canada virtual support groups",
+      "organization": "EDS Canada Foundation",
+      "based_in": "canada",
+      "description_en": "Virtual peer support groups and drop in sessions for Canadians living with Ehlers-Danlos syndromes, hypermobility spectrum disorders and related conditions.",
+      "description_fr": "Groupes de soutien virtuels par les pairs et seances sans rendez-vous pour les personnes au Canada vivant avec un syndrome d'Ehlers-Danlos, un trouble du spectre de l'hypermobilite ou une affection apparentee.",
+      "conditions": [
+        "ehlers-danlos syndromes",
+        "hypermobility spectrum disorders",
+        "chronic pain"
+      ],
+      "format": "virtual",
+      "category": "other-rheumatic",
+      "province": [
+        "national"
+      ],
+      "city": null,
+      "language": [
+        "en"
+      ],
+      "language_notes_en": "French availability was not confirmed.",
+      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
+      "cost": "unknown",
+      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access": "unknown",
+      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "access_url": "https://edscanada.org/resources/virtual-support-groups/",
+      "facilitator_type": "unknown",
+      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
+      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "moderated": "unknown",
+      "focus_areas": [
+        "emotional support",
+        "pain and fatigue",
+        "self-management"
+      ],
+      "audience": [
+        "adults"
+      ],
       "contact_email": null,
       "contact_phone": null,
-      "last_verified": "2026-08-19",
-      "source_url": "https://cassieandfriends.ca/taggroups/"
+      "last_verified": "2026-09-14",
+      "source_url": "https://edscanada.org/resources/virtual-support-groups/"
     }
   ]
 }

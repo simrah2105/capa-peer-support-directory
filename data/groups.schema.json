@@ -20,7 +20,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "name_en", "organization", "based_in", "description_en", "conditions",
+        "id", "name_en", "organization", "based_in", "category", "description_en", "conditions",
         "format", "province", "language", "cost", "how_to_access",
         "facilitator_type", "moderated", "focus_areas", "audience", "last_verified"
       ],
@@ -52,7 +52,13 @@
         },
         "format": {
           "type": "string",
-          "enum": ["in-person", "virtual", "hybrid", "phone", "online-forum"]
+          "enum": ["in-person", "virtual", "hybrid", "phone", "online-forum", "unknown"]
+        },
+        "category": {
+          "type": "string",
+          "enum": ["arthritis", "psoriatic-disease", "lupus", "scleroderma", "sjogrens",
+                   "myositis", "vasculitis", "autoinflammatory", "chronic-pain", "other-rheumatic"],
+          "description": "The condition family this group serves. Used for the Condition focus filter, because the free-text conditions list grew too long to browse."
         },
         "province": {
           "type": "array",

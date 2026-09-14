@@ -33,14 +33,23 @@ telephone service. A private Facebook group has no border, and some phone
 services will talk to anyone. If CAPA confirms either is open to Canadians, they
 belong in the directory.
 
-## 2. Temporarily unreachable
+## 2. Held back, ready to go once something is confirmed
 
-| Organization | What happened |
+| Listing | Why it is not published |
 |---|---|
-| Versus Arthritis online community | `versusarthritis.org` returned **403 "This web app is stopped"** on 19 August 2026, in both a command-line check and a real browser. That is a stopped server, not a blocked bot. The listing was written and then pulled rather than pointing people at a dead page. |
+| Versus Arthritis online community | `versusarthritis.org` returned **403 "This web app is stopped"** on 19 August 2026, in a command line check and in a real browser. That is a stopped server, not a blocked bot. |
+| Lupus SK | `lupussk.com` has an **expired TLS certificate** as of 14 September 2026. The server answers, but every browser shows a full page security warning first. Sending someone living with lupus into that is worse than not listing it. The row is written and waiting. |
+| Sherwood Park peer support group | Recommended by Laurie, who knows the lead volunteer. The source note says to confirm the group's official name and preferred public description with Laurie or the volunteer **before publishing**, so it has not been published. It is a Facebook group at `facebook.com/groups/1198216584008127/`. |
 
-**To restore it:** re-check the address. If it is back, the finished row is in
-this project's git history, `git show` the commit that added `data/groups.csv`.
+**To publish any of these:** fix the one blocking thing, then add the row to
+`data/groups.csv` and run the converter. The finished rows for Versus Arthritis
+and Lupus SK are in this project's git history.
+
+## 3. Moved
+
+| Listing | What happened |
+|---|---|
+| Cassie + Friends TAG | `cassieandfriends.ca/taggroups/` started returning 404 on 14 September 2026, though the programme is clearly still running. The listing now points at their support hub at `/support/` instead, and its notes say to ask which chapter is nearest. Worth repointing at the dedicated page once it reappears. |
 
 ## 3. Not peer support
 
@@ -54,25 +63,22 @@ this project's git history, `git show` the commit that added `data/groups.csv`.
 
 ## What still needs a human
 
-Sixteen listings, and the picture splits neatly in two.
+Thirty one listings. The gaps are concentrated in two fields:
 
-**The eight researched in August 2026** have confirmed cost, moderation and
-facilitator details, because those came from reading the organizations' own
-pages.
+- **Cost is unknown on 22 of 31.**
+- **Moderation is unknown on 23 of 31.**
+- Facilitator type is known for 10.
 
-**The eight from the report** still say "not known" for cost, and mostly for
-moderation and facilitator type, because the report recorded what each programme
-**is** rather than how it operates. Across all sixteen:
+Laurie asked specifically who facilitates and whether they are volunteers. That
+is answered for the Arthritis Society, Pain BC and its three equity groups,
+People In Pain Network, Cassie + Friends TAG, the Sjogren's Society of Canada
+and Scleroderma BC. For the rest it is still open.
 
-- Cost is known on 8, unknown on 8.
-- Moderation is known on 8, unknown on 8.
-- Facilitator type is known on 8, unknown on 8. Laurie asked specifically
-  whether facilitators are volunteers. For the eight Canadian and Pain BC
-  listings the answer is now yes, trained peer volunteers. For the rest it is
-  still open.
-
-Closing the remaining gaps means visiting eight source URLs and, in a few cases,
-sending an email. That is the highest value work left.
+Most of the newer listings came from an organization's own support page, which
+says what a group **is** but rarely what it costs or who runs it. Closing these
+gaps means visiting the source URLs and sending a handful of emails. Contact
+addresses are already recorded for almost every listing, so it is a
+straightforward pass rather than research.
 
 ## Also considered and left out
 

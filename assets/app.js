@@ -82,8 +82,11 @@
 
   /** Free-text spreadsheet terms: translate when we know the term, else show English. */
   function term(value) {
-    if (lang === "fr" && I18N.terms[value]) return I18N.terms[value];
-    return value;
+    var word = (lang === "fr" && I18N.terms[value]) ? I18N.terms[value] : value;
+    /* The spreadsheet keeps these lowercase so they stay a tidy controlled
+       vocabulary. They are capitalised here so they match every other label on
+       screen rather than sitting in lowercase beside them. */
+    return word.charAt(0).toUpperCase() + word.slice(1);
   }
 
   /** Pick the French text when it exists, otherwise fall back to English. */
@@ -125,8 +128,10 @@
       prefix: "format.",     primary: true, order: ["in-person", "virtual", "hybrid", "phone", "online-forum"] },
     { key: "cost",  field: "cost",           param: "cost",  labelKey: "filter.cost",
       prefix: "cost.",       primary: true, order: ["free", "membership-required", "fee", "unknown"] },
-    { key: "cond",  field: "conditions",     param: "cond",  labelKey: "filter.condition",
-      freeText: true,        primary: true },
+    { key: "cat",   field: "category",       param: "cat",   labelKey: "filter.condition",
+      prefix: "category.",   primary: true,
+      order: ["arthritis", "psoriatic-disease", "lupus", "scleroderma", "sjogrens",
+              "myositis", "vasculitis", "autoinflammatory", "chronic-pain", "other-rheumatic"] },
     { key: "glang", field: "language",       param: "glang", labelKey: "filter.language",
       prefix: "lang.",       primary: false, order: ["en", "fr", "other"] },
     { key: "fac",   field: "facilitator_type", param: "fac",  labelKey: "filter.facilitator",
@@ -219,8 +224,13 @@
   }
 
   function filtered() {
-    return records.filter(function (record) {
+    var matches = records.filter(function (record) {
       return matchesSearch(record) && matchesFilters(record);
+    });
+    /* This is a directory for people in Canada, so groups run from Canada come
+       first. Everything else keeps the order it has in the spreadsheet. */
+    return matches.sort(function (a, b) {
+      return (a.based_in === "canada" ? 0 : 1) - (b.based_in === "canada" ? 0 : 1);
     });
   }
 
@@ -404,6 +414,7 @@
     var details = el("div", { class: "card-details", id: detailsId, hidden: "hidden" }, [
       el("dl", { class: "detail-list" }, [
         detailRow(t("field.basedIn"), record.based_in ? t("based." + record.based_in) : ""),
+        detailRow(t("field.category"), record.category ? t("category." + record.category) : ""),
         detailRow(t("field.conditions"), (record.conditions || []).map(term).join(", ")),
         detailRow(t("field.focusAreas"), (record.focus_areas || []).map(term).join(", ")),
         detailRow(t("field.audience"), (record.audience || []).map(function (a) { return t("audience." + a); }).join(", ")),

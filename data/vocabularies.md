@@ -20,6 +20,7 @@ Lists go in a single cell separated by a vertical bar: `AB|SK`.
 | `hybrid` | Hybrid |
 | `phone` | Phone |
 | `online-forum` | Online forum |
+| `unknown` | Format not known |
 
 ## province, fixed list, one or more
 
@@ -62,6 +63,14 @@ privacy are the parts people most need to be able to trust.
 
 `adults`, `youth`, `children`, `seniors`, `caregivers`, `families`, `women`,
 `men`, `anyone`
+
+## category, fixed list, one value
+
+This is what the Condition focus filter uses. The free text `conditions` column
+grew past twenty values, which is too many to browse, so the filter groups them.
+
+`arthritis`, `psoriatic-disease`, `lupus`, `scleroderma`, `sjogrens`,
+`myositis`, `vasculitis`, `autoinflammatory`, `chronic-pain`, `other-rheumatic`
 
 ## conditions, open, one or more
 

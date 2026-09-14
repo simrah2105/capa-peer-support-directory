@@ -22,20 +22,17 @@ These are the things that still need a person to decide. Everything else works.
 | Cost, moderation and facilitator detail | `data/groups.csv` | **Mostly `unknown`**, see `data/NOT-LISTED.md` |
 | French wording | `assets/i18n.js` | **Drafted, not reviewed**, see `REVIEW-FR.md` |
 
-The directory currently holds **16 real listings**. Eight came from *CAPA Peer
-Support Report* (the May 2026 scan). Eight more were researched and verified
-against the organizations' own pages in August 2026: Pain BC's support and
-wellness groups including its BIPOC, 2SLGBTQ+ and young adult groups, People In
-Pain Network, HELP_AB, and both of Cassie + Friends' programmes.
+The directory currently holds **31 listings**. Twenty five are run from Canada
+and come first in the results. The other six are online communities based
+abroad that a person here can still use, each carrying a "Based in" label so
+nobody mistakes one for a Canadian service.
 
-Ten of the sixteen are run from Canada. The other six are online communities
-based elsewhere that a person here can still use, and each of those carries a
-"Based in" label so nobody mistakes one for a Canadian service.
+Coverage now spans arthritis and rheumatic disease, psoriatic disease, lupus,
+scleroderma, Sjogren's, myositis, vasculitis, autoinflammatory disease, chronic
+pain and related conditions, across every province except the territories.
 
-Half the listings now have confirmed cost, moderation and facilitator details.
-The other half are the ones from the report, where those fields honestly say
-"not known". `data/NOT-LISTED.md` sets out what is still missing and what was
-deliberately left out.
+Cost is still unknown on 22 of them and moderation on 23. `data/NOT-LISTED.md`
+sets out those gaps, plus three listings held back for a specific reason.
 
 `data/groups-template.csv` still holds six invented sample rows, marked
 `placeholder: true`. It is the blank form to copy, not live data.
@@ -105,6 +102,18 @@ python3 scripts/csv_to_json.py --check
 ```
 
 This re-reads `data/groups.json` and confirms it is still valid.
+
+### If the spreadsheet is ever lost or damaged
+
+You can rebuild it from the published listings:
+
+```bash
+python3 scripts/csv_to_json.py --to-csv data/groups.csv
+```
+
+This writes a fresh spreadsheet from `data/groups.json`. Useful if a find and
+replace goes wrong, which is easier to do than it sounds: replacing `,,` with
+`,` in a CSV silently deletes an empty column from every row.
 
 ---
 
@@ -212,6 +221,7 @@ What was verified when this was built:
 - **axe-core 4.13** found **no violations** across English, French, mobile
   width, the empty state, and with all panels expanded.
 - **All 22 colour pairs** pass WCAG 2.2 AA.
+- Every filter option and checkbox is at least 44 x 44 pixels.
 - **Everything you can press** is at least 44 x 44 pixels.
 - **No sideways scrolling** at 320 pixels wide, at 200% text size, or both at
   once, in either language.

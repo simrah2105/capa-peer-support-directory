@@ -297,13 +297,13 @@ body::before {
 
 fieldset.filter-group {
   border: 0; border-top: 1px solid var(--border);
-  margin: 0 0 0.25rem; padding: 1.1rem 0 0.4rem;
+  margin: 0; padding: 1.4rem 0 1rem;
 }
 fieldset.filter-group legend {
-  font-weight: 600; padding: 0; color: var(--heading);
+  font-weight: 700; padding: 0; color: var(--heading);
 }
 
-.option-list { list-style: none; margin: 0.6rem 0 0; padding: 0; }
+.option-list { list-style: none; margin: 0.35rem 0 0; padding: 0; }
 /* Deliberately not scrollable on its own. The whole panel scrolls instead,
    so keyboard and screen reader users never meet a scroller inside a scroller. */
 
@@ -322,11 +322,11 @@ fieldset.filter-group legend {
 .option input {
   width: 1.15rem; height: 1.15rem; flex: none;
   /* nudge down so it sits on the first line of a label that wraps */
-  margin: 0.72rem 0 0;
+  margin: 0.5rem 0 0;
   accent-color: var(--accent-solid);
 }
-.option > span:not(.option-count) { padding: 0.6rem 0; }
-.option-count { padding: 0.6rem 0; }
+.option > span:not(.option-count) { padding: 0.35rem 0; }
+.option-count { padding: 0.35rem 0; }
 /* min-width:0 lets a long option name wrap instead of widening the panel. */
 .option > span { min-width: 0; overflow-wrap: anywhere; }
 .option-count {
