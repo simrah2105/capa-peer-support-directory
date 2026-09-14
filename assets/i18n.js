@@ -19,8 +19,8 @@ window.I18N = {
     "lang.current": "English",
 
     /* --- disclaimer --- */
-    "disclaimer.heading": "Before you use this directory",
-    "disclaimer.body": "CAPA does not run or endorse the groups listed here. We put this together so you can see what is out there. Details change often, so please check the cost, the schedule and how to join with the organization itself before you go.",
+    "disclaimer.heading": "Before you get in touch",
+    "disclaimer.body": "CAPA does not run or endorse these groups. Details change often, so please check the cost and how to join with the organization itself.",
 
     /* --- search and filters --- */
     "search.label": "Search groups",
@@ -193,8 +193,8 @@ window.I18N = {
     "lang.switchLabel": "Changer la langue pour l'anglais",
     "lang.current": "Français",
 
-    "disclaimer.heading": "Avant d'utiliser ce répertoire",
-    "disclaimer.body": "L'ACPA n'organise, ne finance ni n'endosse les groupes répertoriés ici. Ce répertoire existe pour vous aider à trouver des options. Les détails changent souvent : veuillez confirmer les coûts, l'horaire et la façon de participer directement auprès de l'organisme avant de vous déplacer.",
+    "disclaimer.heading": "Avant de communiquer",
+    "disclaimer.body": "L'ACPA n'organise ni n'endosse ces groupes. Les détails changent souvent : confirmez les coûts et la façon de participer auprès de l'organisme.",
 
     "search.label": "Rechercher des groupes",
     "search.placeholder": "Essayez une affection, une ville ou un nom de groupe",
