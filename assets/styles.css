@@ -97,6 +97,9 @@
   --callout:       #fdf6da;
   --callout-edge:  #9f3e94;
   --badge:         #fbeecd;
+  --hero-bg:       #582d80;
+  --hero-text:     #ffffff;
+  --hero-muted:    #e8b8e5;
   --shadow:        0 1px 2px rgba(36, 22, 48, 0.05), 0 4px 14px rgba(36, 22, 48, 0.05);
   --shadow-lift:   0 2px 4px rgba(36, 22, 48, 0.07), 0 10px 26px rgba(36, 22, 48, 0.09);
 
@@ -144,7 +147,7 @@ body::before {
   background: var(--brand-magenta);
 }
 
-.wrap { width: 100%; max-width: 70rem; margin: 0 auto; padding: 0 1.25rem; }
+.wrap { width: 100%; max-width: 84rem; margin: 0 auto; padding: 0 1.5rem; }
 
 /* --- accessibility helpers ------------------------------------------------ */
 
@@ -189,29 +192,29 @@ body::before {
 
 /* --- page intro ----------------------------------------------------------- */
 
-/* The intro sits straight on the page. It used to be a white band, but the band
-   was full width while its content only ever filled the left half, so the right
-   44% was permanently empty. The padding lives here rather than on the heading,
-   because a margin on the heading collapses straight out of the container. */
-.intro {
-  padding-top: 2.25rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
+/* A band in the deep brand purple. It anchors the page, puts the search where
+   the eye lands first, and fills width that used to sit empty. */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  padding: 3rem 0 3.25rem;
 }
-/* A hairline instead of a filled band: it separates the intro from the results
-   without adding another background colour to the stack. */
-.intro .wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
+.hero .page-title { color: var(--hero-text); }
+.hero .page-subtitle { color: var(--hero-muted); }
+.hero .field-label { color: var(--hero-text); }
+.hero .field-hint { color: var(--hero-muted); }
 
 .page-title {
-  font-size: clamp(1.875rem, 1.4rem + 2vw, 2.75rem);
-  line-height: 1.1; margin: 0 0 0.6rem; max-width: 20ch;
+  font-size: clamp(1.875rem, 1.4rem + 2.2vw, 3rem);
+  line-height: 1.08; margin: 0 0 0.6rem; max-width: 20ch;
 }
 .page-subtitle {
-  margin: 0 0 1.75rem; color: var(--text-muted);
-  font-size: 1.0625rem; line-height: 1.55; max-width: 54ch;
+  margin: 0 0 1.9rem;
+  font-size: 1.125rem; line-height: 1.5; max-width: 52ch;
 }
 
 .disclaimer {
+  margin-top: 2rem;
   background: var(--surface);
   border-left: 3px solid var(--brand-magenta);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
@@ -230,7 +233,7 @@ body::before {
 }
 .disclaimer p { margin: 0; font-size: 1rem; }
 
-.hero-search { max-width: 34rem; margin-bottom: 1.75rem; }
+.hero-search { max-width: 44rem; margin-bottom: 0; }
 .hero-search .search-input {
   font-size: 1.125rem;
   min-height: 3.25rem;
@@ -241,13 +244,13 @@ body::before {
 
 /* --- layout --------------------------------------------------------------- */
 
-.layout { display: block; }
+.layout { display: block; margin-top: 2rem; }
 
 @media (min-width: 56rem) {
   .layout {
     display: grid;
-    grid-template-columns: 21rem minmax(0, 1fr);
-    gap: 2.75rem;
+    grid-template-columns: 19rem minmax(0, 1fr);
+    gap: 2.5rem;
     align-items: start;
   }
 }
@@ -431,7 +434,10 @@ fieldset.filter-group legend {
   border-bottom: 2px solid var(--brand-lilac);
 }
 
-.result-list { display: grid; gap: 1.75rem; }
+.result-list { display: grid; gap: 1.5rem; align-items: start; }
+@media (min-width: 80rem) {
+  .result-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 
 .card {
   overflow-wrap: anywhere;
@@ -439,7 +445,7 @@ fieldset.filter-group legend {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.9rem 1.9rem 1.75rem 2.15rem;
+  padding: 1.5rem 1.5rem 1.4rem 1.75rem;
   box-shadow: var(--shadow);
 }
 .card::before {
@@ -454,7 +460,7 @@ fieldset.filter-group legend {
 }
 .card:hover { border-color: var(--border-strong); }
 
-.card-name { font-size: 1.3125rem; line-height: 1.25; margin: 0 0 0.25rem; }
+.card-name { font-size: 1.25rem; line-height: 1.25; margin: 0 0 0.25rem; }
 .card-org { margin: 0 0 1.1rem; color: var(--text-muted); font-size: 0.9375rem; }
 .card-desc { margin: 0 0 1.5rem; max-width: var(--measure); color: var(--text); }
 

@@ -18,6 +18,8 @@ CSS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 
 # (foreground token, background token, minimum ratio, what it is)
 PAIRS = [
+    ("--hero-text",   "--hero-bg", 4.5, "title and labels on the purple band"),
+    ("--hero-muted",  "--hero-bg", 4.5, "subtitle and hint on the purple band"),
     ("--text",        "--bg",      4.5, "body text on the page"),
     ("--heading",     "--bg",      4.5, "headings on the page"),
     ("--heading",     "--card",    4.5, "headings on a card"),
