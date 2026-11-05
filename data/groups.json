@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "last_updated": "2026-09-14",
+  "last_updated": "2026-11-05",
   "records": [
     {
       "id": "arthritis-society-canada-arthritis-connections",
@@ -8,8 +8,8 @@
       "name_en": "Arthritis Connections online support groups",
       "organization": "Arthritis Society Canada",
       "based_in": "canada",
-      "description_en": "Peer support groups that meet online throughout the month, led by trained volunteers who live with arthritis themselves. There are nine kinds of group, including ones for osteoarthritis, rheumatoid arthritis, psoriatic arthritis, pain, staying active, caregivers, and people preparing for or recovering from joint replacement surgery.",
-      "description_fr": "Groupes de soutien par les pairs qui se réunissent en ligne tout au long du mois, animés par des bénévoles formés qui vivent eux-mêmes avec l'arthrite. Neuf types de groupes existent, dont l'arthrose, la polyarthrite rhumatoïde, l'arthrite psoriasique, la douleur, l'activité physique, les proches aidants et le remplacement articulaire.",
+      "description_en": "Led by trained volunteers who understand arthritis firsthand, these peer support groups meet online at various times throughout each month. They help reduce isolation and support people to manage arthritis through knowledge-sharing, encouragement and conversations with others who understand. Rooms include osteoarthritis, rheumatoid arthritis, psoriatic arthritis, general arthritis (any type), arthritis pain, staying active, living with multiple types of arthritis, supporting someone with arthritis, and joint replacement surgery. The rooms offered change based on community needs.",
+      "description_fr": "Animés par des bénévoles qui vivent eux-mêmes avec l'arthrite, ces groupes de soutien en ligne sont offerts à différents moments tout au long du mois. Ils permettent de briser l'isolement, de discuter avec des personnes qui comprennent leur réalité et d'explorer des stratégies pour demeurer actifs, gérer les symptômes et préserver leur qualité de vie. Les groupes en français (Aide entrAide) comprennent Vivre avec l'arthrite, Polyarthrite rhumatoïde, Arthrite inflammatoire, Arthrose, Douleur chronique et fibromyalgie, Soutenir un proche vivant avec l'arthrite et Demeurer actif avec l'arthrite.",
       "conditions": [
         "any arthritis",
         "osteoarthritis",
@@ -27,14 +27,14 @@
         "en",
         "fr"
       ],
-      "language_notes_en": "The English groups are booked through arthritis.ca. There is a French site at arthrite.ca.",
-      "language_notes_fr": "Les groupes en anglais se réservent via arthritis.ca. Un site en français existe à arthrite.ca.",
+      "language_notes_en": "Groups run in English and in French. English groups are booked at arthritis.janeapp.com. French groups (Aide entrAide) are booked at arthrite.janeapp.com, with more information at arthrite.ca/soutien-education/aide-entraide/.",
+      "language_notes_fr": "Des groupes sont offerts en anglais et en français. Les groupes en français (Aide entrAide) se réservent à arthrite.janeapp.com; plus d'information à arthrite.ca/soutien-education/aide-entraide/. Les groupes en anglais se réservent à arthritis.janeapp.com.",
       "cost": "free",
       "cost_notes_en": "Free to attend. You need a free Jane account to book.",
       "cost_notes_fr": "Participation gratuite. Un compte Jane gratuit est requis pour réserver.",
       "how_to_access": "sign-up-form",
-      "how_to_access_notes_en": "Create a free account on Jane, pick a group, and the Zoom link arrives in your confirmation email.",
-      "how_to_access_notes_fr": "Créez un compte gratuit sur Jane, choisissez un groupe, et le lien Zoom vous parvient par courriel de confirmation.",
+      "how_to_access_notes_en": "Book a group directly at arthritis.janeapp.com (English) or arthrite.janeapp.com (French). You need a free Jane account, and the Zoom link arrives in your confirmation email.",
+      "how_to_access_notes_fr": "Réservez directement à arthrite.janeapp.com (français) ou arthritis.janeapp.com (anglais). Un compte Jane gratuit est requis, et le lien Zoom arrive dans le courriel de confirmation.",
       "access_url": "https://arthritis.ca/support-education/arthritis-connections/",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Trained volunteers who understand arthritis firsthand.",
@@ -58,7 +58,7 @@
       "schedule_notes_fr": "Les groupes ont lieu à divers moments du mois.",
       "contact_email": "connections@arthritis.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://arthritis.ca/support-education/arthritis-connections/"
     },
     {
@@ -234,7 +234,7 @@
       "how_to_access": "self-refer",
       "how_to_access_notes_en": "This is an open online community, you join it yourself through the website. The exact sign-up steps were not recorded in CAPA's scan.",
       "how_to_access_notes_fr": "Il s'agit d'une communauté en ligne ouverte : vous vous y inscrivez vous-même via le site Web. Les étapes exactes n'ont pas été consignées.",
-      "access_url": "https://www.psoriasis-association.org.uk/peer-to-peer-support",
+      "access_url": "https://psoriasisuk.org.uk/information-and-support/page.aspx?ID=860",
       "facilitator_type": "unknown",
       "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
       "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigné. Veuillez confirmer auprès de l'organisme.",
@@ -253,7 +253,7 @@
       "contact_email": null,
       "contact_phone": null,
       "last_verified": "2026-05-29",
-      "source_url": "https://www.psoriasis-association.org.uk/peer-to-peer-support"
+      "source_url": "https://psoriasisuk.org.uk/information-and-support/page.aspx?ID=860"
     },
     {
       "id": "npf-talk-psoriasis",
@@ -399,8 +399,8 @@
       "name_en": "Pain Support and Wellness Groups",
       "organization": "Pain BC",
       "based_in": "canada",
-      "description_en": "Free two hour groups for people living with persistent pain, run by trained peer facilitators who live with pain themselves. Each session mixes learning, group discussion and gentle movement. Groups run for regions across British Columbia, and you can join one outside your own region if the timing suits you better.",
-      "description_fr": "Groupes gratuits de deux heures pour les personnes vivant avec une douleur persistante, animés par des pairs formés qui vivent eux-mêmes avec la douleur. Chaque séance combine apprentissage, discussion de groupe et mouvement en douceur. Des groupes existent pour les régions de la Colombie-Britannique, et vous pouvez joindre celui d'une autre région si l'horaire vous convient mieux.",
+      "description_en": "Free one hour and two hour groups for BC residents living with persistent pain, run by trained peer facilitators who live with pain themselves. Sessions mix learning, group discussion and mindful relaxation. Regional groups run across British Columbia, plus a Social Hour group, and you can join one outside your own region if the timing suits you better.",
+      "description_fr": "Groupes gratuits d'une heure et de deux heures pour les résidents de la Colombie-Britannique vivant avec une douleur persistante, animés par des pairs formés qui vivent eux-mêmes avec la douleur. Les séances combinent apprentissage, discussion de groupe et relaxation en pleine conscience. Des groupes régionaux existent partout en Colombie-Britannique, ainsi qu'un groupe Social Hour, et vous pouvez joindre celui d'une autre région si l'horaire vous convient mieux.",
       "conditions": [
         "chronic pain",
         "any arthritis"
@@ -418,9 +418,9 @@
       "cost_notes_en": "Free. You do need to register.",
       "cost_notes_fr": "Gratuit. L'inscription est requise.",
       "how_to_access": "sign-up-form",
-      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
-      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
-      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "how_to_access_notes_en": "Register online through Pain BC. Online registration closes 24 hours before each meeting, but you can still join by emailing supportgroups@painbc.ca.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. L'inscription en ligne ferme 24 heures avant chaque rencontre, mais vous pouvez quand même vous joindre au groupe en écrivant à supportgroups@painbc.ca.",
+      "access_url": "https://painbc.ca/supportgroups",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
       "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
@@ -436,22 +436,22 @@
       "audience": [
         "adults"
       ],
-      "schedule_notes_en": "Most groups meet twice a month on a Tuesday, either 11am to 1pm or 6pm to 8pm. You can dial in by phone if you cannot join by video.",
-      "schedule_notes_fr": "La plupart des groupes se réunissent deux fois par mois le mardi, de 11 h à 13 h ou de 18 h à 20 h. Une participation par téléphone est possible.",
+      "schedule_notes_en": "Regional groups meet on the second Tuesday (11 am to 1 pm PT) and fourth Tuesday (6 to 8 pm PT) of each month. The Social Hour group meets on the first and third Thursday (1 to 2 pm PT). You can dial in by phone if you cannot join by video.",
+      "schedule_notes_fr": "Les groupes régionaux se réunissent le deuxième mardi (11 h à 13 h, HP) et le quatrième mardi (18 h à 20 h, HP) du mois. Le groupe Social Hour se réunit le premier et le troisième jeudi (13 h à 14 h, HP). Une participation par téléphone est possible.",
       "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
-      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+      "last_verified": "2026-10-22",
+      "source_url": "https://painbc.ca/supportgroups"
     },
     {
       "id": "pain-bc-bipoc-group",
       "placeholder": false,
-      "name_en": "BIPOC Pain Support and Wellness Group",
+      "name_en": "BIPOC Pain Support and Wellness Group (currently on break)",
       "name_fr": "Groupe de soutien pour personnes noires, autochtones et de couleur",
       "organization": "Pain BC",
       "based_in": "canada",
-      "description_en": "A monthly Pain BC group for Black, Indigenous and people of colour who live with pain, so that people can talk about pain without having to explain or defend their experience of the health system first.",
-      "description_fr": "Groupe mensuel de Pain BC pour les personnes noires, autochtones et de couleur qui vivent avec la douleur, afin de pouvoir parler de la douleur sans avoir d'abord à expliquer ou justifier son expérience du système de santé.",
+      "description_en": "Currently on break. Pain BC hopes to restart it soon. A monthly Pain BC group for Black, Indigenous and people of colour who live with pain, so that people can talk about pain without having to explain or defend their experience of the health system first.",
+      "description_fr": "Actuellement en pause. Pain BC espère le relancer bientôt. Groupe mensuel de Pain BC pour les personnes noires, autochtones et de couleur qui vivent avec la douleur, afin de pouvoir parler de la douleur sans avoir d'abord à expliquer ou justifier son expérience du système de santé.",
       "conditions": [
         "chronic pain",
         "any arthritis"
@@ -469,9 +469,9 @@
       "cost_notes_en": "Free. You do need to register.",
       "cost_notes_fr": "Gratuit. L'inscription est requise.",
       "how_to_access": "sign-up-form",
-      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
-      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
-      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "how_to_access_notes_en": "Register online through Pain BC. Online registration closes 24 hours before each meeting, but you can still join by emailing supportgroups@painbc.ca.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. L'inscription en ligne ferme 24 heures avant chaque rencontre, mais vous pouvez quand même vous joindre au groupe en écrivant à supportgroups@painbc.ca.",
+      "access_url": "https://painbc.ca/supportgroups",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
       "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
@@ -486,12 +486,12 @@
       "audience": [
         "bipoc"
       ],
-      "schedule_notes_en": "Monthly, on the third Tuesday.",
-      "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
+      "schedule_notes_en": "Currently on break. When running, it meets monthly on the third Tuesday, 6 to 8 pm PT.",
+      "schedule_notes_fr": "Actuellement en pause. Lorsqu'il a lieu, il se réunit une fois par mois, le troisième mardi, de 18 h à 20 h (HP).",
       "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
-      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+      "last_verified": "2026-10-22",
+      "source_url": "https://painbc.ca/supportgroups"
     },
     {
       "id": "pain-bc-lgbtq2s-group",
@@ -519,9 +519,9 @@
       "cost_notes_en": "Free. You do need to register.",
       "cost_notes_fr": "Gratuit. L'inscription est requise.",
       "how_to_access": "sign-up-form",
-      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
-      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
-      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "how_to_access_notes_en": "Register online through Pain BC. Online registration closes 24 hours before each meeting, but you can still join by emailing supportgroups@painbc.ca.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. L'inscription en ligne ferme 24 heures avant chaque rencontre, mais vous pouvez quand même vous joindre au groupe en écrivant à supportgroups@painbc.ca.",
+      "access_url": "https://painbc.ca/supportgroups",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
       "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
@@ -540,8 +540,8 @@
       "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
       "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
-      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+      "last_verified": "2026-10-22",
+      "source_url": "https://painbc.ca/supportgroups"
     },
     {
       "id": "pain-bc-young-adults-group",
@@ -569,9 +569,9 @@
       "cost_notes_en": "Free. You do need to register.",
       "cost_notes_fr": "Gratuit. L'inscription est requise.",
       "how_to_access": "sign-up-form",
-      "how_to_access_notes_en": "Register online through Pain BC. Registration closes 24 hours before each meeting.",
-      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. Les inscriptions ferment 24 heures avant chaque rencontre.",
-      "access_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups",
+      "how_to_access_notes_en": "Register online through Pain BC. Online registration closes 24 hours before each meeting, but you can still join by emailing supportgroups@painbc.ca.",
+      "how_to_access_notes_fr": "Inscrivez-vous en ligne auprès de Pain BC. L'inscription en ligne ferme 24 heures avant chaque rencontre, mais vous pouvez quand même vous joindre au groupe en écrivant à supportgroups@painbc.ca.",
+      "access_url": "https://painbc.ca/supportgroups",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "Trained peer facilitators with lived experience of pain.",
       "facilitator_notes_fr": "Des pairs formés ayant une expérience vécue de la douleur.",
@@ -590,8 +590,8 @@
       "schedule_notes_fr": "Une fois par mois, le troisième mardi.",
       "contact_email": "supportgroups@painbc.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
-      "source_url": "https://painbc.ca/find-help/support-programs/pain-support-wellness-groups"
+      "last_verified": "2026-10-22",
+      "source_url": "https://painbc.ca/supportgroups"
     },
     {
       "id": "people-in-pain-network",
@@ -599,8 +599,8 @@
       "name_en": "Pain self-management groups",
       "organization": "People In Pain Network",
       "based_in": "canada",
-      "description_en": "Peer led groups where people living with persistent pain learn and practise self-management skills together. Volunteer peer leaders run regular meetings. British Columbia has the largest network of groups, and there are groups running in Alberta, Quebec and Nova Scotia.",
-      "description_fr": "Groupes animés par des pairs où les personnes vivant avec une douleur persistante apprennent et mettent en pratique des habiletés d'autogestion. Des pairs bénévoles animent des rencontres régulières. La Colombie-Britannique compte le plus grand réseau de groupes, et il en existe en Alberta, au Québec et en Nouvelle-Écosse.",
+      "description_en": "The People in Pain Network is a non-profit dedicated to peer-led pain self-management education and support. It offers free, ongoing monthly meetings, online and in person, where people living with persistent pain, families and supporters build self-management skills in an empathetic setting. It also runs dedicated programming for young adults.",
+      "description_fr": "Le People in Pain Network est un organisme sans but lucratif consacré à l'éducation et au soutien par les pairs en matière d'autogestion de la douleur. Il offre des rencontres mensuelles gratuites, en ligne et en personne, où les personnes vivant avec une douleur persistante, leurs familles et leurs proches développent des habiletés d'autogestion dans un climat d'empathie. Il propose aussi une programmation pour les jeunes adultes.",
       "conditions": [
         "chronic pain",
         "any arthritis"
@@ -609,10 +609,8 @@
       "category": "chronic-pain",
       "province": [
         "national",
-        "BC",
-        "AB",
-        "QC",
-        "NS"
+        "NS",
+        "NL"
       ],
       "city": null,
       "language": [
@@ -626,23 +624,27 @@
       "how_to_access_notes_fr": "Inscrivez-vous à une rencontre via la page de réservation du réseau.",
       "access_url": "https://www.pipain.com/manage-680267.html",
       "facilitator_type": "peer-volunteer",
-      "facilitator_notes_en": "Volunteer peer leaders who live with pain themselves and coordinate the meetings.",
-      "facilitator_notes_fr": "Des pairs bénévoles qui vivent eux-mêmes avec la douleur et coordonnent les rencontres.",
+      "facilitator_notes_en": "Every meeting is led by a facilitator who completes extensive onboarding training, with ongoing mentorship and evidence-informed materials from PIPN's leadership.",
+      "facilitator_notes_fr": "Chaque rencontre est animée par une personne qui a suivi une formation d'accueil approfondie, avec un mentorat continu et du matériel fondé sur les données probantes fourni par la direction du réseau.",
       "moderated": "yes",
       "moderation_notes_en": "Peer leaders run the meetings and are responsible for keeping them welcoming and comfortable. A written set of participant rules was not published on the site.",
       "moderation_notes_fr": "Les pairs animateurs dirigent les rencontres et veillent à ce qu'elles restent accueillantes. Aucun règlement écrit pour les participants n'était publié sur le site.",
       "focus_areas": [
         "pain and fatigue",
         "self-management",
-        "emotional support"
+        "emotional support",
+        "young adults"
       ],
       "audience": [
         "adults",
-        "caregivers"
+        "caregivers",
+        "families"
       ],
+      "schedule_notes_en": "Free monthly meetings. In-person groups currently meet only in Nova Scotia (Sydney, Berwick and Greenwood). There is also a virtual group for Newfoundland and Labrador, led by a facilitator there. Check pipain.com for current meetings.",
+      "schedule_notes_fr": "Rencontres mensuelles gratuites. Les groupes en personne ont lieu pour l'instant seulement en Nouvelle-Écosse (Sydney, Berwick et Greenwood). Un groupe virtuel est aussi offert pour Terre-Neuve-et-Labrador, animé par une personne de la province. Consultez pipain.com pour les rencontres en cours.",
       "contact_email": "info@pipain.com",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://www.pipain.com/"
     },
     {
@@ -891,12 +893,12 @@
       "name_en": "Lupus Ontario Support Groups",
       "organization": "Lupus Ontario",
       "based_in": "canada",
-      "description_en": "A network of provincial, regional and community specific peer support groups for people living with lupus, including groups in Durham, Ottawa, Windsor, South Georgian Bay and the west of the province, plus groups for men, for menopause and for young adults.",
-      "description_fr": "Reseau de groupes de soutien par les pairs provinciaux, regionaux et communautaires pour les personnes vivant avec le lupus, dont des groupes a Durham, Ottawa, Windsor, South Georgian Bay et dans l'ouest de la province, ainsi que des groupes pour les hommes, sur la menopause et pour les jeunes adultes.",
+      "description_en": "Nine free online support groups for people living with lupus across Ontario: a Provincial group open to everyone, regional groups for Durham, Ottawa, Windsor, South Georgian Bay and Western Ontario, and groups for men, for menopause and a Young Adults Social. Regional groups help people in the same area connect, and members sometimes arrange in-person meetups themselves.",
+      "description_fr": "Neuf groupes de soutien gratuits en ligne pour les personnes vivant avec le lupus en Ontario : un groupe provincial ouvert à toutes et à tous, des groupes régionaux pour Durham, Ottawa, Windsor, South Georgian Bay et l'Ouest de l'Ontario, ainsi que des groupes pour les hommes, sur la ménopause et un groupe social pour jeunes adultes. Les groupes régionaux permettent aux personnes d'une même région de se rencontrer, et certains membres organisent eux-mêmes des rencontres en personne.",
       "conditions": [
         "lupus"
       ],
-      "format": "hybrid",
+      "format": "virtual",
       "category": "lupus",
       "province": [
         "ON"
@@ -907,16 +909,16 @@
       ],
       "language_notes_en": "French availability was not confirmed.",
       "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
-      "cost": "unknown",
-      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "cost": "free",
+      "cost_notes_en": "All support groups are free to attend.",
+      "cost_notes_fr": "Tous les groupes de soutien sont gratuits.",
       "how_to_access": "unknown",
-      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access_notes_en": "Dates and joining details are on Lupus Ontario's support page.",
+      "how_to_access_notes_fr": "Les dates et la façon de participer sont sur la page de soutien de Lupus Ontario.",
       "access_url": "https://lupusontario.org/support/",
-      "facilitator_type": "unknown",
-      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "facilitator_type": "peer-volunteer",
+      "facilitator_notes_en": "Facilitators live with lupus themselves and have been trained to support others in the lupus community.",
+      "facilitator_notes_fr": "Les animateurs vivent eux-mêmes avec le lupus et ont reçu une formation pour soutenir d'autres membres de la communauté.",
       "moderated": "unknown",
       "focus_areas": [
         "emotional support",
@@ -926,11 +928,12 @@
       "audience": [
         "adults",
         "young-adults",
-        "men"
+        "men",
+        "women"
       ],
       "contact_email": "info@lupusontario.org",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://lupusontario.org/support/"
     },
     {
@@ -986,8 +989,8 @@
       "name_en": "Spill the Lupus",
       "organization": "Lupus Society of Alberta",
       "based_in": "canada",
-      "description_en": "An online support group where people affected by lupus share experiences, meet others and learn about lupus related issues.",
-      "description_fr": "Groupe de soutien en ligne ou les personnes touchees par le lupus partagent leur experience, rencontrent d'autres personnes et s'informent sur le lupus.",
+      "description_en": "A monthly online support group where people affected by lupus share experiences, meet others and talk about lupus-related topics, sometimes with a guest speaker. Members can email in topics they would like to discuss.",
+      "description_fr": "Groupe de soutien mensuel en ligne où les personnes touchées par le lupus partagent leur expérience, rencontrent d'autres personnes et discutent de sujets liés au lupus, parfois avec une personne invitée. Les membres peuvent proposer des sujets par courriel.",
       "conditions": [
         "lupus"
       ],
@@ -1002,16 +1005,16 @@
       ],
       "language_notes_en": "French availability was not confirmed.",
       "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
-      "cost": "unknown",
-      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
-      "how_to_access": "unknown",
-      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "cost": "free",
+      "cost_notes_en": "Free to attend.",
+      "cost_notes_fr": "Participation gratuite.",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Email lupuslsa@shaw.ca to register.",
+      "how_to_access_notes_fr": "Écrivez à lupuslsa@shaw.ca pour vous inscrire.",
       "access_url": "https://www.lupus.ab.ca/events",
       "facilitator_type": "unknown",
-      "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "facilitator_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "facilitator_notes_en": "Facilitated by the Lupus Society of Alberta, sometimes with guest speakers.",
+      "facilitator_notes_fr": "Animé par la Société du lupus de l'Alberta, parfois avec des personnes invitées.",
       "moderated": "unknown",
       "focus_areas": [
         "emotional support",
@@ -1021,9 +1024,11 @@
         "adults",
         "caregivers"
       ],
+      "schedule_notes_en": "First Wednesday of every month at 7 pm (Alberta time), on Zoom. Meetings can last up to two hours.",
+      "schedule_notes_fr": "Le premier mercredi de chaque mois à 19 h (heure de l'Alberta), sur Zoom. Les rencontres peuvent durer jusqu'à deux heures.",
       "contact_email": "lupuslsa@shaw.ca",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://www.lupus.ab.ca/events"
     },
     {
@@ -1056,14 +1061,14 @@
       "language": [
         "en"
       ],
-      "language_notes_en": "French availability was not confirmed.",
-      "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
-      "cost": "unknown",
-      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "language_notes_en": "No groups are currently offered in French.",
+      "language_notes_fr": "Aucun groupe n'est offert en français pour le moment.",
+      "cost": "free",
+      "cost_notes_en": "There is no cost to attend.",
+      "cost_notes_fr": "La participation est sans frais.",
       "how_to_access": "unknown",
-      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "how_to_access_notes_en": "Find your nearest group and its leader's contact details on the Society's support groups page.",
+      "how_to_access_notes_fr": "Trouvez le groupe le plus proche et les coordonnées de la personne responsable sur la page des groupes de soutien de la Société.",
       "access_url": "https://sjogrenscanada.org/living-with-sjgrens/support-groups.html",
       "facilitator_type": "peer-volunteer",
       "facilitator_notes_en": "The groups are described as volunteer led.",
@@ -1078,7 +1083,7 @@
       ],
       "contact_email": "info@sjogrenscanada.org",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://sjogrenscanada.org/living-with-sjgrens/support-groups.html"
     },
     {
@@ -1181,8 +1186,8 @@
       "name_en": "Scleroderma Manitoba support group",
       "organization": "Scleroderma Manitoba",
       "based_in": "canada",
-      "description_en": "Peer support meetings where people living with scleroderma, along with caregivers, family and supporters, meet others and learn about living with the condition.",
-      "description_fr": "Rencontres de soutien par les pairs ou les personnes vivant avec la sclerodermie, ainsi que leurs proches aidants et leur famille, rencontrent d'autres personnes et s'informent.",
+      "description_en": "Informal peer support meetings for people living with scleroderma, as well as caregivers, family members and friends, often with a guest speaker. Meetings are held on Zoom, with occasional in-person meetings in the warmer months.",
+      "description_fr": "Rencontres informelles de soutien par les pairs pour les personnes vivant avec la sclérodermie, ainsi que leurs proches aidants, leur famille et leurs amis, souvent avec une personne invitée. Les rencontres ont lieu sur Zoom, avec quelques rencontres en personne pendant la saison chaude.",
       "conditions": [
         "scleroderma"
       ],
@@ -1197,12 +1202,12 @@
       ],
       "language_notes_en": "French availability was not confirmed.",
       "language_notes_fr": "La disponibilite en francais n'a pas ete confirmee.",
-      "cost": "unknown",
-      "cost_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "cost_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
-      "how_to_access": "unknown",
-      "how_to_access_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
-      "how_to_access_notes_fr": "L'analyse de l'ACPA ne l'a pas consigne. Veuillez confirmer aupres de l'organisme.",
+      "cost": "free",
+      "cost_notes_en": "There is no cost to attend.",
+      "cost_notes_fr": "La participation est sans frais.",
+      "how_to_access": "contact-first",
+      "how_to_access_notes_en": "Email sclerodermamb@gmail.com to join.",
+      "how_to_access_notes_fr": "Écrivez à sclerodermamb@gmail.com pour participer.",
       "access_url": "https://sclerodermamanitoba.com/support-in-your-community/",
       "facilitator_type": "unknown",
       "facilitator_notes_en": "CAPA's scan did not record this. Please confirm with the organization.",
@@ -1217,9 +1222,11 @@
         "caregivers",
         "families"
       ],
+      "schedule_notes_en": "Meets 3 to 4 times a year.",
+      "schedule_notes_fr": "Se réunit de 3 à 4 fois par année.",
       "contact_email": "sclerodermamb@gmail.com",
       "contact_phone": null,
-      "last_verified": "2026-09-14",
+      "last_verified": "2026-10-22",
       "source_url": "https://sclerodermamanitoba.com/support-in-your-community/"
     },
     {
